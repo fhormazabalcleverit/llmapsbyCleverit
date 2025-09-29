@@ -47,7 +47,7 @@ const ChatInterface = () => {
                     : 'text-gray-400 hover:text-white hover:bg-gray-700/50'
                 }`}
               >
-                <Mic className="w-5 h-5" />
+                <Mic className="w-5 h-5 text-gray-700" />
               </button>
               <button
                 onClick={handleSendMessage}

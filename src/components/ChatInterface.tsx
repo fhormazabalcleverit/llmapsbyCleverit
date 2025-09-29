@@ -37,7 +37,7 @@ const ChatInterface = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Pregúntale a CleverIT LLMApp"
-                className="flex-1 bg-transparent text-gray-700 placeholder-gray-400 text-lg outline-none"
+                className="flex-1 bg-transparent text- placeholder-gray-400 text-lg outline-none"
               />
               <button
                 onClick={toggleListening}

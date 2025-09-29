@@ -34,7 +34,7 @@ const ChatInterface = () => {
       if (currentPlaceholder.length > 0) {
         timeout = setTimeout(() => {
           setCurrentPlaceholder(currentPlaceholder.slice(0, -1));
-        }, 30); // Erasing speed (faster than typing)
+        }, 15); // Erasing speed (much faster than typing)
       } else {
         // Move to next phrase and start typing
         setCurrentIndex((prev) => (prev + 1) % phrases.length);

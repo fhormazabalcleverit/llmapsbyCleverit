@@ -27,7 +27,7 @@ const ChatInterface = () => {
         // Wait before starting to erase
         timeout = setTimeout(() => {
           setIsTyping(false);
-        }, 2000);
+        }, 1000);
       }
     } else {
       // Erasing effect

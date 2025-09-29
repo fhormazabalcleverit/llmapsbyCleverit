@@ -9,7 +9,7 @@ const ChatInterface = () => {
   const [isTyping, setIsTyping] = useState(true);
 
   const phrases = [
-    "Con los datos de mi negocio encuentra el mes con mayores ventas",
+    "Encuentra el mes con mayores ventas del 2025",
     "Si mis ventas se mantienen ¿Cuando tendré falta de stock?",
     "Creame un dashboard de productividad de mi negocio"
   ];

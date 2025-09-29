@@ -1,17 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X, ShoppingCart, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isPagesOpen, setIsPagesOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-black/95 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50">
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ${
+      isScrolled
+        ? 'bg-gradient-to-r from-black/80 via-gray-900/70 to-black/80 backdrop-blur-md border-b border-gray-700/50 shadow-lg'
+        : 'bg-transparent border-b border-transparent'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -71,7 +86,11 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-gray-900 border-t border-gray-800">
+          <div className={`md:hidden border-t transition-all duration-300 ${
+            isScrolled
+              ? 'bg-black/90 backdrop-blur-md border-gray-700/50'
+              : 'bg-black/95 backdrop-blur-sm border-gray-800'
+          }`}>
             <div className="px-2 pt-2 pb-3 space-y-1">
                {/*
               <a href="#" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200">

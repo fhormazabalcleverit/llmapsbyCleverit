@@ -1,9 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mic, Send, BarChart3, LayoutDashboard, FileText } from 'lucide-react';
 
 const ChatInterface = () => {
   const [message, setMessage] = useState('');
   const [isListening, setIsListening] = useState(false);
+  const [currentPlaceholder, setCurrentPlaceholder] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
+
+  const phrases = [
+    "Con los datos de mi negocio encuentra el mes con mayores ventas",
+    "Dime ¿Cuántos productos tendré sin stock en el siguiente mes si mis ventas se mantienen?",
+    "Ayúdame creando un dashboard en tiempo real de la productividad de mi negocio"
+  ];
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+
+    if (isTyping) {
+      // Typing effect
+      if (currentPlaceholder.length < phrases[currentIndex].length) {
+        timeout = setTimeout(() => {
+          setCurrentPlaceholder(phrases[currentIndex].slice(0, currentPlaceholder.length + 1));
+        }, 50); // Typing speed
+      } else {
+        // Wait before starting to erase
+        timeout = setTimeout(() => {
+          setIsTyping(false);
+        }, 2000);
+      }
+    } else {
+      // Erasing effect
+      if (currentPlaceholder.length > 0) {
+        timeout = setTimeout(() => {
+          setCurrentPlaceholder(currentPlaceholder.slice(0, -1));
+        }, 30); // Erasing speed (faster than typing)
+      } else {
+        // Move to next phrase and start typing
+        setCurrentIndex((prev) => (prev + 1) % phrases.length);
+        setIsTyping(true);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [currentPlaceholder, currentIndex, isTyping, phrases]);
 
   const handleSendMessage = () => {
     if (message.trim()) {
@@ -31,14 +71,23 @@ const ChatInterface = () => {
           {/* Chat Input */}
           <div className="bg-black rounded-xl p-4 mb-6 border border-gray-600/30">
             <div className="flex items-center gap-3">
-              <input
-                type="text"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                onKeyPress={handleKeyPress}
-                placeholder="Pregúntale a CleverIT LLMApp"
-                className="flex-1 bg-transparent text-gray-700 placeholder-gray-400 text-lg outline-none"
-              />
+              <div className="flex-1 relative">
+                <input
+                  type="text"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  onKeyPress={handleKeyPress}
+                  className="w-full bg-transparent text-white text-lg outline-none"
+                />
+                {!message && (
+                  <div className="absolute inset-0 flex items-center pointer-events-none">
+                    <span className="text-gray-400 text-lg">
+                      {currentPlaceholder}
+                      <span className="animate-pulse">|</span>
+                    </span>
+                  </div>
+                )}
+              </div>
               <button
                 onClick={toggleListening}
                 className={`p-2 rounded-xl transition-all duration-200 ${

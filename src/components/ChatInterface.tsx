@@ -27,7 +27,7 @@ const ChatInterface = () => {
     <div className="max-w-4xl mx-auto mt-16 mb-8">
       {/* Chat Interface Container */}
       <div className="bg-gradient-to-r from-pink-500/20 via-purple-600/20 to-pink-500/20 p-1 rounded-2xl backdrop-blur-sm">
-        <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-6 border border-gray-700/30">
+        <div className="bg-gray-900 backdrop-blur-md rounded-2xl p-6 border border-gray-700/30">
           {/* Chat Input */}
           <div className="bg-gray-800/50 rounded-xl p-4 mb-6 border border-gray-600/30">
             <div className="flex items-center gap-3">

@@ -41,7 +41,7 @@ const ChatInterface = () => {
               />
               <button
                 onClick={toggleListening}
-                className={`p-2 rounded-lg transition-all duration-200 ${
+                className={`p-2 rounded-xl transition-all duration-200 ${
                   isListening
                     ? 'bg-pink-500 text-white'
                     : 'text-gray-400 hover:text-white hover:bg-gray-700/50'

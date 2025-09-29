@@ -10,8 +10,8 @@ const ChatInterface = () => {
 
   const phrases = [
     "Con los datos de mi negocio encuentra el mes con mayores ventas",
-    "Dime ¿Cuántos productos tendré sin stock en el siguiente mes si mis ventas se mantienen?",
-    "Ayúdame creando un dashboard en tiempo real de la productividad de mi negocio"
+    "si mis ventas se mantienen ¿Cuántos productos tendré sin stock?",
+    "Creame un dashboard de productividad de mi negocio"
   ];
 
   useEffect(() => {

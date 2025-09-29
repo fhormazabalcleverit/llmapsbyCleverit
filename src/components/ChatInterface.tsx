@@ -29,7 +29,7 @@ const ChatInterface = () => {
       <div className="bg-gradient-to-r from-pink-500/20 via-purple-600 to-pink-500 p-1 rounded-2xl backdrop-blur-sm">
         <div className="bg-black rounded-2xl p-6 border border-gray-700/30">
           {/* Chat Input */}
-          <div className="bg-gray-800/50 rounded-xl p-4 mb-6 border border-gray-600/30">
+          <div className="bg-gray-900 rounded-xl p-4 mb-6 border border-gray-600/30">
             <div className="flex items-center gap-3">
               <input
                 type="text"
@@ -37,7 +37,7 @@ const ChatInterface = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Pregúntale a CleverIT LLMApp"
-                className="flex-1  text-white placeholder-gray-400 text-lg outline-none"
+                className="flex-1 bg-transparent text-white placeholder-gray-400 text-lg outline-none"
               />
               <button
                 onClick={toggleListening}

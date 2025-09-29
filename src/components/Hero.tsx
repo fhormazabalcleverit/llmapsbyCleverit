@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ChatInterface from './ChatInterface';
 
 const Hero = () => {
   return (
@@ -40,6 +41,11 @@ const Hero = () => {
             <a href="https://interfaz-de-agente-i-7lya.bolt.host" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-600 hover:border-pink-500 text-white hover:text-pink-400 font-medium px-8 py-4 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 bg-transparent hover:bg-pink-500/10">
               Ver caso de uso
             </a>
+          </div>
+
+          {/* Chat Interface */}
+          <div className="animate-slide-up-delay-3">
+            <ChatInterface />
           </div>
 
           {/* Decorative elements */}

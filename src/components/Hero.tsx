@@ -44,17 +44,8 @@ const Hero = () => {
           </div>
 
           {/* Chat Interface */}
-          <div className="animate-slide-up-delay-3 relative z-20 mb-8">
+          <div className="animate-slide-up-delay-3">
             <ChatInterface />
-          </div>
-
-          {/* Screen Image - positioned behind chat interface */}
-          <div className="animate-slide-up-delay-3 flex justify-center -mt-16 relative z-10">
-            <img
-              src="/screen.png"
-              alt="CleverIT LLMApp Interface"
-              className="max-w-4xl w-full h-auto rounded-2xl shadow-2xl shadow-black/50"
-            />
           </div>
 
           {/* Decorative elements */}

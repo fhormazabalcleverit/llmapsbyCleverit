@@ -61,15 +61,15 @@ const ChatInterface = () => {
           {/* Quick Actions */}
           <div className="flex flex-wrap items-center justify-start gap-6 mb-6">
             <button className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors duration-200 group">
-              <BarChart3 className="w-3 h-3 group-hover:text-pink-400" />
+              <BarChart3 className="w-4 h-4 group-hover:text-pink-400" />
               <span className="text-sm">Métricas</span>
             </button>
             <button className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors duration-200 group">
-              <LayoutDashboard className="w-3 h-3 group-hover:text-pink-400" />
+              <LayoutDashboard className="w-4 h-4 group-hover:text-pink-400" />
               <span className="text-sm">Dashboard</span>
             </button>
             <button className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors duration-200 group">
-              <FileText className="w-3 h-3 group-hover:text-pink-400" />
+              <FileText className="w-4 h-4 group-hover:text-pink-400" />
               <span className="text-sm">Reportes</span>
             </button>
           </div>

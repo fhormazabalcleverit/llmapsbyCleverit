@@ -110,7 +110,7 @@ const FAQ = () => {
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
             FAQ
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
             Respuestas a preguntas comunes
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">

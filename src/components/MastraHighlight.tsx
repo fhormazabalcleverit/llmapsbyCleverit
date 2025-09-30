@@ -37,7 +37,7 @@ const MastraHighlight = () => {
                 </p>
                 <p className="text-xl md:text-lg text-blue-200 leading-relaxed max-w-5xl mx-auto mt-4">
                   Nos permite entregar aplicaciones{' '}
-                  <span className="font-bold bg-gradient-to-r from-blue-400 to-purple-400">seguras, monitoreadas y confiables</span>, listas para escalar en entornos corporativos.
+                  <span className="font-bold text-white">seguras, monitoreadas y confiables</span>, listas para escalar en entornos corporativos.
                 </p>
               </div>
 

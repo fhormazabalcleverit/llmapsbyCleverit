@@ -5,7 +5,7 @@ import ChatInterface from './ChatInterface';
 
 const Hero = () => {
   return (
-    <section className="bg-backblack min-h-screen flex items-center relative overflow-hidden -top-18">
+    <section className="bg-backblack min-h-screen flex items-center relative overflow-hidden -top-10">
       {/* Background SVG */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/background01.svg)' }}></div>
       

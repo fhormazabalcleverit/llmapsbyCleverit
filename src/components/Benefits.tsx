@@ -63,7 +63,7 @@ const Benefits = () => {
             return (
               <div
                 key={index}
-                className={`group transition-all text-center  ${delayClasses[index]} ${gridVisible ? 'animate' : ''}`}
+                className={`group transition-all  duration-300 text-center  ${delayClasses[index]} ${gridVisible ? 'animate' : ''}`}
               >
                 {/* Icon */}
                 <div className="w-16 h-16 transition-all bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600  duration-300">

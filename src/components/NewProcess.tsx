@@ -39,7 +39,7 @@ const NewProcess = () => {
   ];
 
   return (
-    <section className="bg-backblack pb-20">
+    <section className="bg-backblack ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
 

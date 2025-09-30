@@ -94,11 +94,11 @@ const FAQ = () => {
                     alt="AI Certification"
                     className="w-60 h-82 rounded-3xl object-cover transform rotate-0 hover:rotate-2 transition-all duration-300 hover:shadow-2xl"
                   />
-                  {/* Right Visual Element 
+                  {/* Right Visual Element  */}
                   <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-400 rounded-full flex items-center justify-center">
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
-                  */}
+                 
                 </div>
               </div>
             </div>

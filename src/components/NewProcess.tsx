@@ -47,10 +47,9 @@ const NewProcess = () => {
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
             Proceso
           </div>
-           {/* Header 
           <h2 className="text-2xl md:text-2xl lg:text-4xl font-bold text-white leading-tight max-w-4xl mx-auto">
             Cómo transformamos tus datos en insights
-          </h2> */}
+          </h2>  {/*  */}
           <p className="text-xl text-gray-300 mt-6 max-w-3xl mx-auto">
             Un proceso simple de 3 pasos para potenciar tu negocio con inteligencia artificial
           </p>

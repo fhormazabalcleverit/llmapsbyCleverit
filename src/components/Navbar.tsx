@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${
       isScrolled
-        ? 'bg-gradient-to-r from-black/80 via-gray-900/70 to-black/80 backdrop-blur-md border-b border-gray-700/50 shadow-lg'
+        ? 'bg-gradient-to-r from-black/10 via-gray-900/70 to-black/80 backdrop-blur-md border-b border-gray-700/50 shadow-lg'
         : 'bg-transparent border-b border-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

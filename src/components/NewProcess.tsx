@@ -96,7 +96,7 @@ const NewProcess = () => {
                 <h3 className="text-xl font-bold text-white mb-4 leading-tight">
                   {step.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-500 leading-relaxed">
                   {step.description}
                 </p>
               </div>

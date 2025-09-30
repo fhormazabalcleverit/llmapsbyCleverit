@@ -35,8 +35,6 @@ const FAQ = () => {
     }
   ];
 
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -126,28 +124,26 @@ const FAQ = () => {
             <div
               key={index}
               className="bg-backblack rounded-xl backdrop-blur-sm overflow-hidden transition-all duration-300 hover:bg-gray-900/50"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
             >
               <button
-                className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none transition-all duration-300 hover:px-8"
+                className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none "
                 onClick={() => toggleFAQ(index)}
               >
                 <span className="text-lg font-semibold text-white pr-4">
                   {faq.question}
                 </span>
                 <div className="flex-shrink-0">
-                  {(openIndex === index || hoveredIndex === index) ? (
+                  {openIndex === index ? (
                     <Minus className="w-6 h-6 text-pink-400 transition-transform duration-200" />
                   ) : (
                     <Plus className="w-6 h-6 text-pink-400 transition-transform duration-200" />
                   )}
                 </div>
               </button>
-
+              
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  (openIndex === index || hoveredIndex === index) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
                 <div className="px-6 pb-6 pt-0">

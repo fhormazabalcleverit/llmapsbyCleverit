@@ -40,7 +40,7 @@ const PricingFAQ = () => {
 
   return (
     <section className="bg-backblack py-20">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -62,10 +62,10 @@ const PricingFAQ = () => {
               className="border border-gray-700 rounded-xl bg-gray-900/50 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-pink-500/50"
             >
               <button
-                className="w-full px-4 py-4 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-inset"
+                className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-inset"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="text-lg font-semibold text-white">
+                <span className="text-lg font-semibold text-white pr-4">
                   {faq.question}
                 </span>
                 <div className="flex-shrink-0">

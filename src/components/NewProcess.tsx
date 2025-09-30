@@ -41,7 +41,8 @@ const NewProcess = () => {
   return (
     <section className="bg-backblack pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header 
+        {/* Header   */}
+
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
             Proceso
@@ -53,8 +54,7 @@ const NewProcess = () => {
             Un proceso simple de 3 pasos para potenciar tu negocio con inteligencia artificial
           </p>
         </div>
-        */}
-
+      
         {/* Process Cards */}
         <div ref={cardsRef} className={`grid grid-cols-1 lg:grid-cols-3 gap-8 fade-in-up-delay ${cardsVisible ? 'animate' : ''}`}>
           {steps.map((step, index) => (

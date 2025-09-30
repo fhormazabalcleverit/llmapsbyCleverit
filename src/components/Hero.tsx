@@ -5,9 +5,9 @@ import ChatInterface from './ChatInterface';
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-sky-950 via-black to-gray-900 min-h-screen flex items-center relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(139,92,246,0.1)_0%,_transparent_50%)]"></div>
+    <section className="bg-black min-h-screen flex items-center relative overflow-hidden">
+      {/* Background SVG */}
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/background01.svg)' }}></div>
       
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
@@ -48,14 +48,9 @@ const Hero = () => {
             <ChatInterface />
           </div>
 
-          {/* Decorative elements */}
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-pink-500/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-purple-600/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
       </div>
 
-      {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
     </section>
   );
 };

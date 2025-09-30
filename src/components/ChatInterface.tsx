@@ -77,7 +77,7 @@ const ChatInterface = () => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  className="w-full bg-transparent text-md text-white text-lg outline-none"
+                  className="w-full bg-transparent text-white text-lg outline-none"
                 />
                 {!message && (
                   <div className="absolute inset-0 flex items-center pointer-events-none">

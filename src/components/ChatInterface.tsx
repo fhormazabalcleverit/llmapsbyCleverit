@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Mic, Send, BarChart3, LayoutDashboard, FileText } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const ChatInterface = () => {
+  const { t } = useLanguage();
   const [message, setMessage] = useState('');
   const [isListening, setIsListening] = useState(false);
   const [currentPlaceholder, setCurrentPlaceholder] = useState('');
@@ -9,9 +11,9 @@ const ChatInterface = () => {
   const [isTyping, setIsTyping] = useState(true);
 
   const phrases = [
-    "¿Cuál es el mes con más ventas hasta hoy",
-    "¿Cuando puedo tener falta de stock?",
-    "Creame un dashboard de mi negocio"
+    t.chatInterface.placeholder1,
+    t.chatInterface.placeholder2,
+    t.chatInterface.placeholder3
   ];
 
   useEffect(() => {
@@ -111,22 +113,22 @@ const ChatInterface = () => {
           <div className="flex flex-wrap items-center justify-start gap-4 md:gap-6 mb-6">
             <button className="flex items-center gap-2 text-gray-700 hover:text-white transition-colors duration-200 group">
               <BarChart3 className="w-4 h-4 group-hover:text-pink-400" />
-              <span className="text-xs md:text-sm">Métricas</span>
+              <span className="text-xs md:text-sm">{t.chatInterface.metricsLabel}</span>
             </button>
             <button className="flex items-center gap-2 text-gray-700 hover:text-white transition-colors duration-200 group">
               <LayoutDashboard className="w-4 h-4 group-hover:text-pink-400" />
-              <span className="text-xs md:text-sm">Dashboard</span>
+              <span className="text-xs md:text-sm">{t.chatInterface.dashboardLabel}</span>
             </button>
             <button className="flex items-center gap-2 text-gray-700 hover:text-white transition-colors duration-200 group">
               <FileText className="w-4 h-4 group-hover:text-pink-400" />
-              <span className="text-xs md:text-sm">Reportes</span>
+              <span className="text-xs md:text-sm">{t.chatInterface.reportsLabel}</span>
             </button>
           </div>
 
           {/* Status Indicator */}
           <div className="flex items-center justify-center gap-2 text-gray-400">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-xs">LLMaps está en línea y listo para ayudarte</span>
+            <span className="text-xs">{t.chatInterface.statusOnline}</span>
           </div>
         </div>
       </div>

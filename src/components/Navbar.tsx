@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ShoppingCart, ChevronDown } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isPagesOpen, setIsPagesOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { language, toggleLanguage, t } = useLanguage();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -42,34 +44,22 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-             {/*
-            <a href="#" className="text-gray-300 hover:text-white transition-colors duration-200">
-              Sobre LLM Apps
-            </a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors duration-200">
-              Integraciones
-            </a>
-            */}
             <a href="/planes" className="text-gray-300 hover:text-white transition-colors duration-200">
-              Planes
+              {t.navbar.plans}
             </a>
             <a href="/cotizar" className="text-gray-300 hover:text-white transition-colors duration-200">
-              Contáctanos
+              {t.navbar.contact}
             </a>
           </div>
 
-          {/* Right side - Cart and Sign Up */}
+          {/* Right side - Language Toggle */}
           <div className="hidden md:flex items-center space-x-4">
-              {/* 
-            <button className="relative text-gray-300 hover:text-white transition-colors duration-200">
-              <ShoppingCart className="w-6 h-6" />
-              <span className="absolute -top-2 -right-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                0
-              </span>
-            </button>
-             */}
-            <button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium">
-              Iniciar sesión
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
+            >
+              <Globe className="w-5 h-5" />
+              <span>{language === 'es' ? 'ES' : 'EN'}</span>
             </button>
           </div>
 
@@ -92,23 +82,22 @@ const Navbar = () => {
               : 'bg-backblack/95 backdrop-blur-sm border-gray-800'
           }`}>
             <div className="px-2 pt-2 pb-3 space-y-1">
-               {/*
-              <a href="#" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200">
-                Sobre LLM Apps
-              </a>
-              <a href="#" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200">
-                Integraciones
-              </a>
-*/}
               <Link to="/planes" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200" onClick={() => setIsOpen(false)}>
-                Planes
+                {t.navbar.plans}
               </Link>
               <Link to="/cotizar" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200" onClick={() => setIsOpen(false)}>
-                Contáctanos
+                {t.navbar.contact}
               </Link>
               <div className="flex items-center justify-between px-3 py-2 border-t border-gray-700 mt-4 pt-4">
-                <button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium" onClick={() => setIsOpen(false)}>
-                  Iniciar sesión
+                <button
+                  onClick={() => {
+                    toggleLanguage();
+                    setIsOpen(false);
+                  }}
+                  className="flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
+                >
+                  <Globe className="w-5 h-5" />
+                  <span>{language === 'es' ? 'ES' : 'EN'}</span>
                 </button>
               </div>
             </div>

@@ -1,0 +1,254 @@
+{
+  "navbar": {
+    "plans": "Plans",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "badge": "Advanced AI Solutions",
+    "title": "Load, memorize and",
+    "titleHighlight": "chat",
+    "titleEnd": "with your data",
+    "description": "We transform your business with LLM Apps and boost productivity and automation of your business.",
+    "ctaPrimary": "Get a Quote",
+    "ctaSecondary": "View Use Case"
+  },
+  "chatInterface": {
+    "placeholder1": "When can I have stock shortages?",
+    "placeholder2": "What are my best-selling products?",
+    "placeholder3": "Which customer bought the most last month?",
+    "metricsLabel": "Metrics",
+    "dashboardLabel": "Dashboard",
+    "reportsLabel": "Reports",
+    "statusOnline": "LLMaps is online and ready to help you"
+  },
+  "newProcess": {
+    "badge": "How it works",
+    "title": "Three simple steps to",
+    "titleHighlight": "revolutionize",
+    "titleEnd": "your business",
+    "step1": {
+      "title": "Connect your data sources",
+      "description": "Easily integrate your existing databases, files, and APIs."
+    },
+    "step2": {
+      "title": "Train your AI assistant",
+      "description": "Our system learns from your data to provide accurate answers."
+    },
+    "step3": {
+      "title": "Chat and get insights",
+      "description": "Interact naturally with your data and receive real-time analysis."
+    }
+  },
+  "benefits": {
+    "badge": "Benefits",
+    "title": "Why choose",
+    "titleHighlight": "LLMApps?",
+    "benefit1": {
+      "title": "No-code integration",
+      "description": "Connect your data without needing to code. Our system adapts to your existing infrastructure."
+    },
+    "benefit2": {
+      "title": "Enterprise security",
+      "description": "Your data stays secure with enterprise-grade encryption and full permission control."
+    },
+    "benefit3": {
+      "title": "Real-time analysis",
+      "description": "Get instant insights from your data with conversational responses and intuitive visualizations."
+    },
+    "benefit4": {
+      "title": "Guaranteed scalability",
+      "description": "From startups to enterprises, our infrastructure grows with your business."
+    }
+  },
+  "mastraHighlight": {
+    "badge": "Powered by Mastra",
+    "title": "Built on",
+    "titleHighlight": "cutting-edge technology",
+    "description": "LLMApps is developed with Mastra, the most advanced framework for creating conversational AI applications. Get the best of both worlds: the power of AI and simplicity of use.",
+    "feature1": "Advanced AI framework",
+    "feature2": "Real-time processing",
+    "feature3": "Scalable architecture",
+    "cta": "Learn more about Mastra"
+  },
+  "process": {
+    "badge": "Our Process",
+    "title": "From idea to",
+    "titleHighlight": "implementation",
+    "titleEnd": "in weeks",
+    "step1": {
+      "title": "Discovery",
+      "description": "We analyze your needs and data sources to design the perfect solution."
+    },
+    "step2": {
+      "title": "Implementation",
+      "description": "Our team configures and integrates your LLMApp with your existing systems."
+    },
+    "step3": {
+      "title": "Training",
+      "description": "We train your team and fine-tune the system for optimal results."
+    },
+    "step4": {
+      "title": "Ongoing support",
+      "description": "We accompany you with constant updates and improvements to your application."
+    }
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What our",
+    "titleHighlight": "clients say",
+    "testimonial1": {
+      "quote": "LLMApps completely transformed how we analyze our data. What used to take hours now takes minutes.",
+      "author": "Maria Gonzalez",
+      "position": "CEO at TechCorp"
+    },
+    "testimonial2": {
+      "quote": "The ability to converse with our data in natural language has revolutionized our decision making.",
+      "author": "Carlos Rodriguez",
+      "position": "Data Director at InnovateLab"
+    },
+    "testimonial3": {
+      "quote": "Incredible ease of integration. In less than a week we had everything running perfectly.",
+      "author": "Ana Martinez",
+      "position": "CTO at DataFlow"
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently",
+    "titleHighlight": "asked questions",
+    "question1": {
+      "q": "What types of data can I connect?",
+      "a": "You can connect virtually any data source: SQL and NoSQL databases, Excel files, CSV, PDFs, REST APIs, and more. Our system is extremely flexible and adapts to your needs."
+    },
+    "question2": {
+      "q": "Is it safe to connect my business data?",
+      "a": "Absolutely. We use enterprise-grade encryption, comply with international security standards, and your data is never shared with third parties. Plus, you have full control over permissions and access."
+    },
+    "question3": {
+      "q": "How long does implementation take?",
+      "a": "Depending on the complexity of your project, basic implementation can be ready in 1-2 weeks. More complex projects may take 4-6 weeks. We always work to deliver value as quickly as possible."
+    },
+    "question4": {
+      "q": "Do I need technical knowledge to use LLMApps?",
+      "a": "No, LLMApps is designed to be used by anyone. If you can write a text message, you can use our platform. The conversational interface is intuitive and natural."
+    },
+    "question5": {
+      "q": "What kind of support do you offer?",
+      "a": "We offer complete support that includes initial training, detailed documentation, and ongoing assistance. Depending on your plan, you'll have access to email, chat, or even a dedicated account manager."
+    }
+  },
+  "pricing": {
+    "badge": "Plans & Pricing",
+    "title": "Choose the perfect plan for",
+    "titleHighlight": "your business",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "save": "Save 20%",
+    "starter": {
+      "name": "Starter",
+      "description": "Perfect for small teams getting started",
+      "price": "$299",
+      "period": "/month",
+      "feature1": "Up to 10,000 queries/month",
+      "feature2": "2 data sources",
+      "feature3": "Email support",
+      "feature4": "Basic updates",
+      "feature5": "Analytics dashboard",
+      "cta": "Start free trial"
+    },
+    "professional": {
+      "name": "Professional",
+      "description": "For growing businesses",
+      "price": "$799",
+      "period": "/month",
+      "popular": "Most Popular",
+      "feature1": "Up to 50,000 queries/month",
+      "feature2": "10 data sources",
+      "feature3": "Priority 24/7 support",
+      "feature4": "Advanced updates",
+      "feature5": "Advanced analytics",
+      "feature6": "Custom API",
+      "feature7": "Training included",
+      "cta": "Start free trial"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Custom solutions for large organizations",
+      "price": "Custom",
+      "feature1": "Unlimited queries",
+      "feature2": "Unlimited data sources",
+      "feature3": "Dedicated account manager",
+      "feature4": "99.9% SLA guaranteed",
+      "feature5": "Dedicated infrastructure",
+      "feature6": "Custom integrations",
+      "feature7": "On-site training",
+      "feature8": "Security audits",
+      "cta": "Contact sales"
+    }
+  },
+  "pricingFaq": {
+    "badge": "Pricing Questions",
+    "title": "Frequently asked questions about",
+    "titleHighlight": "our plans",
+    "question1": {
+      "q": "Can I change plans at any time?",
+      "a": "Yes, you can upgrade or change your plan at any time. Changes apply immediately and you only pay the prorated difference."
+    },
+    "question2": {
+      "q": "What happens if I exceed my query limit?",
+      "a": "We'll notify you when you approach your limit. You can choose to upgrade your plan or purchase additional query packages as needed."
+    },
+    "question3": {
+      "q": "Do you offer discounts for non-profit organizations?",
+      "a": "Yes, we offer special discounts for non-profit and educational organizations. Contact us to learn more details."
+    },
+    "question4": {
+      "q": "Does the free trial require a credit card?",
+      "a": "No, you can start your 14-day free trial without needing to enter payment information. You only need to create an account."
+    }
+  },
+  "quote": {
+    "badge": "Request a Quote",
+    "title": "Tell us about your",
+    "titleHighlight": "project",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "john@company.com",
+      "company": "Company",
+      "companyPlaceholder": "My Company Inc.",
+      "phone": "Phone",
+      "phonePlaceholder": "+1 234 567 8900",
+      "project": "Tell us about your project",
+      "projectPlaceholder": "Describe your project, needs and goals...",
+      "submit": "Submit request",
+      "submitting": "Submitting..."
+    },
+    "info": {
+      "title": "Why choose us?",
+      "point1": "Response in less than 24 hours",
+      "point2": "Free initial consultation",
+      "point3": "No-commitment quote",
+      "point4": "Implementation in weeks, not months"
+    }
+  },
+  "footer": {
+    "description": "We transform data into intelligent conversations. Power your business with cutting-edge conversational AI.",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "docs": "Documentation",
+    "api": "API",
+    "company": "Company",
+    "about": "About us",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "rights": "All rights reserved."
+  }
+}

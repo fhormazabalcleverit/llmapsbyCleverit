@@ -43,7 +43,7 @@ const Process = () => {
       {/* Background SVG */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90" style={{ backgroundImage: 'url(/mastra.svg)' }}></div>
 
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div ref={headerRef} className={`mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
            {/*

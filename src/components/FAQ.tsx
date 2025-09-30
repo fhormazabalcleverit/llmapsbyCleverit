@@ -126,7 +126,7 @@ const FAQ = () => {
               className="bg-backblack rounded-xl backdrop-blur-sm overflow-hidden transition-all duration-300 hover:bg-gray-900/50"
             >
               <button
-                className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none "
+                className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none transition-all duration-300 hover:px-8"
                 onClick={() => toggleFAQ(index)}
               >
                 <span className="text-lg font-semibold text-white pr-4">

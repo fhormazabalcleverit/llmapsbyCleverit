@@ -35,16 +35,13 @@ const MastraHighlight = () => {
                   En <span className="font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">LLMApps by CleverIT</span> construimos nuestras soluciones sobre{' '}
                   <span className="font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Mastra</span>, un framework open-source en TypeScript diseñado para agentes de IA.
                 </p>
-                 <p className="text-xl md:text-lg text-gray-400 leading-relaxed max-w-5xl mx-auto mt-4">
-                  Nos permite entregar aplicaciones{' '}
-                  <span className="font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">seguras, monitoreadas y confiables</span>, listas para escalar en entornos corporativos.
-                </p>
-
                 
-                <p className="text-xl md:text-lg text-gray-400 leading-relaxed max-w-5xl mx-auto mt-4">
+
+                  <p className="text-xl md:text-lg text-gray-400 leading-relaxed max-w-5xl mx-auto mt-4">
                   Nos permite entregar aplicaciones{' '}
                   <span className="font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">seguras, monitoreadas y confiables</span>, listas para escalar en entornos corporativos.
                 </p>
+                
               </div>
 
               {/* Feature Icons */}

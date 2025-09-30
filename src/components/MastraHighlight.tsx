@@ -36,7 +36,7 @@ const MastraHighlight = () => {
                   <span className="font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">Mastra</span>, un framework open-source en TypeScript diseñado para agentes de IA.
                 </p>
                 <p className="text-xl md:text-lg text-blue-200 leading-relaxed max-w-5xl mx-auto mt-4">
-                  Esto nos permite entregar aplicaciones{' '}
+                  Nos permite entregar aplicaciones{' '}
                   <span className="font-bold text-white">seguras, monitoreadas y confiables</span>, listas para escalar en entornos corporativos.
                 </p>
               </div>

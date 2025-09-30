@@ -62,7 +62,7 @@ const Process = () => {
         </div>
 
         {/* Process Steps */}
-        <div ref={cardsRef} className={`flex flex-col lg:flex-row gap-2 items-stretch fade-in-up-delay  ${cardsVisible ? 'animate' : ''}`}>
+        <div ref={cardsRef} className={`flex flex-col lg:flex-row gap-4 items-stretch fade-in-up-delay  ${cardsVisible ? 'animate' : ''}`}>
           {steps.map((step, index) => (
             <div
               key={index}

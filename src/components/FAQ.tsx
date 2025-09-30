@@ -119,7 +119,7 @@ const FAQ = () => {
         </div>
 
         {/* FAQ Items */}
-        <div ref={faqRef} className={`space-y-4 fade-in-up-delay ${faqVisible ? 'animate' : ''}`}>
+        <div ref={faqRef} className={`space-y-4 fade-in-up-delay max-w-4xl mx-auto   ${faqVisible ? 'animate' : ''}`}>
           {faqs.map((faq, index) => (
             <div
               key={index}

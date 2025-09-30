@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-backblack py-16 relative overflow-hidden">
       {/* Background SVG */}
-      <div className="absolute inset-0 bg-no-repeat bg-center" style={{ backgroundImage: 'url(/footer.svg)', backgroundSize: 'auto 100%' }}></div>
+      <div className="absolute inset-0 bg-no-repeat bg-center bg-[length:100%_auto] md:bg-cover" style={{ backgroundImage: 'url(/footer.svg)' }}></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">

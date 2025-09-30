@@ -69,7 +69,7 @@ const ChatInterface = () => {
       <div className="bg-gradient-to-r from-pink-500/20 via-purple-600 to-pink-500 p-1 rounded-3xl backdrop-blur-sm">
         <div className="bg-backblack rounded-3xl p-6 border border-gray-700/30">
           {/* Chat Input */}
-          <div className="bg-backblack rounded-xl p-4 mb-6 border border-gray-600/30">
+          <div className="bg-backblack rounded-xl p-2 mb-6 border border-gray-600/30">
             <div className="flex items-center gap-3">
               <div className="flex-1 relative">
                 <input

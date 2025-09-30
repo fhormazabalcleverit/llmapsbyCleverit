@@ -35,7 +35,7 @@ const QuoteForm = () => {
   ];
 
   return (
-    <section className="bg-black py-20 min-h-screen">
+    <section className="bg-backblack py-20 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>

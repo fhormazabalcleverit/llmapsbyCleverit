@@ -4,7 +4,7 @@ import PricingFAQ from '../components/PricingFAQ';
 
 const PricingPage = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-backblack">
       <Pricing />
       <PricingFAQ />
     </div>

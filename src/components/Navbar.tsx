@@ -88,8 +88,8 @@ const Navbar = () => {
         {isOpen && (
           <div className={`md:hidden border-t transition-all duration-300 ${
             isScrolled
-              ? 'bg-black/90 backdrop-blur-md border-gray-700/50'
-              : 'bg-black/95 backdrop-blur-sm border-gray-800'
+              ? 'bg-backblack/90 backdrop-blur-md border-gray-700/50'
+              : 'bg-backblack/95 backdrop-blur-sm border-gray-800'
           }`}>
             <div className="px-2 pt-2 pb-3 space-y-1">
                {/*

@@ -3,7 +3,7 @@ import { Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-16">
+    <footer className="bg-backblack py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Logo and Description */}

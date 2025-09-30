@@ -40,7 +40,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="bg-black py-20">
+    <section className="bg-backblack py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* AI Certification Banner */}
         <div ref={bannerRef} className={`mb-20 fade-in-up ${bannerVisible ? 'animate' : ''}`}>
@@ -123,7 +123,7 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-black rounded-xl backdrop-blur-sm overflow-hidden transition-all duration-300 hover:bg-gray-900/50"
+              className="bg-backblack rounded-xl backdrop-blur-sm overflow-hidden transition-all duration-300 hover:bg-gray-900/50"
             >
               <button
                 className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none "

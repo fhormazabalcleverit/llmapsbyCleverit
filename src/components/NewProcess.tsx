@@ -44,7 +44,7 @@ const NewProcess = () => {
         
 
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
-          <div className="inline-block bg-gray-800 text-gray-300 px-4 py-1 rounded-full text-sm font-medium mb-6">
+          <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
             Proceso
           </div>
           <h2 className="text-xl md:text-xl lg:text-2xl font-bold text-white leading-tight max-w-4xl mx-auto">
@@ -62,7 +62,7 @@ const NewProcess = () => {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col">
               {/* Card */}
-              <div className="group relative bg-gray-900/50 border border-gray-800 hover:border-pink-500/50 rounded-2xl p-0 transition-all duration-500 ease-in-out hover:bg-gray-800/50 min-h-[200px] flex items-center justify-center mb-6">
+              <div className="group relative bg-blackback border border-gray-800 hover:border-pink-500/50 rounded-2xl p-0 transition-all duration-500 ease-in-out hover:bg-gray-800/50 min-h-[200px] flex items-center justify-center mb-6">
                 {index === 1 ? (
                   /* Animated Loader for center card */
                   <div className="flex flex-col items-center justify-center space-y-6">

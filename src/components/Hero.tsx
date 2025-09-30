@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="bg-backblack min-h-screen flex items-center relative overflow-hidden -top-16">
       {/* Background SVG */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/background01.svg)' }}></div>
+      <div className="absolute inset-0 bg-no-repeat bg-cover bg-center md:bg-cover" style={{ backgroundImage: 'url(/background01.svg)', backgroundSize: 'auto 100%', backgroundPosition: 'center' }}></div>
       
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-60 md:mt-0">
         <div className="text-center max-w-4xl mx-auto">

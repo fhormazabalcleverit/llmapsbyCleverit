@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-no-repeat bg-cover bg-center md:bg-cover" 
         style={{ backgroundImage: 'url(/background01.svg)', 
                 border: '1px solid red',
-                backgroundSize: '200% 100%', 
+                backgroundSize: '200% auto', 
                 backgroundPosition: 'center' }}></div>
       
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-60 md:mt-0">

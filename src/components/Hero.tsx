@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight animate-slide-up max-w-5xl mx-auto">
+          <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-8 leading-tight animate-slide-up max-w-5xl mx-auto">
             Carga, memoriza y{' '}
             <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
               conversa

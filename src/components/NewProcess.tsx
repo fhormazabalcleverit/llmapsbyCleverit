@@ -1,15 +1,17 @@
 import React from 'react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useLanguage } from '../context/LanguageContext';
 
 const NewProcess = () => {
+  const { t } = useLanguage();
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: cardsRef, isVisible: cardsVisible } = useScrollAnimation();
 
   const steps = [
     {
       number: "01",
-      title: "Sube tus datos",
-      description: "Carga archivos, conecta bases de datos o APIs de manera segura y eficiente para alimentar tu sistema de IA.",
+      title: t.newProcess.step1.title,
+      description: t.newProcess.step1.description,
       elements: [
         { type: "file", name: "documento.pdf", size: "2.4 MB", icon: "📄" },
         { type: "database", name: "Base de datos", records: "1,250 registros", icon: "🗄️" },
@@ -17,9 +19,9 @@ const NewProcess = () => {
       ]
     },
     {
-      number: "02", 
-      title: "Procesamiento inteligente",
-      description: "Nuestra IA organiza, estructura y procesa tu información automáticamente con los más altos estándares de seguridad.",
+      number: "02",
+      title: t.newProcess.step2.title,
+      description: t.newProcess.step2.description,
       elements: [
         { type: "brain", name: "Análisis IA", progress: 85, icon: "🧠" },
         { type: "structure", name: "Estructuración", status: "Procesando", icon: "⚙️" },
@@ -28,8 +30,8 @@ const NewProcess = () => {
     },
     {
       number: "03",
-      title: "Conversa y obtén insights",
-      description: "Haz preguntas en lenguaje natural y recibe respuestas precisas, reportes automáticos y visualizaciones.",
+      title: t.newProcess.step3.title,
+      description: t.newProcess.step3.description,
       elements: [
         { type: "chat", message: "¿Cuáles son las ventas del Q4?", response: "Las ventas del Q4 fueron $2.3M...", icon: "💬" },
         { type: "insight", title: "Insight clave", value: "Incremento del 23%", icon: "💡" },
@@ -45,10 +47,10 @@ const NewProcess = () => {
 
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Proceso
+            {t.newProcess.badge}
           </div>
           <h2 className="text-xl md:text-xl lg:text-2xl font-bold text-white leading-tight max-w-4xl mx-auto">
-            Cómo transformamos tus datos en insights
+            {t.newProcess.title}
           </h2>  
           {/*
           <p className="text-xl text-gray-300 mt-6 max-w-3xl mx-auto">

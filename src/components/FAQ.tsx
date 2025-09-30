@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Plus, Minus, Award, CheckCircle } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useLanguage } from '../context/LanguageContext';
 
 const FAQ = () => {
+  const { t } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: bannerRef, isVisible: bannerVisible } = useScrollAnimation();
@@ -58,29 +60,29 @@ const FAQ = () => {
                   </div>
                   <div>
                     <p className="text-sky-400 text-sm font-medium">
-                      Expertos verificados
+                      {t.faq.certBadge}
                     </p>
                     <h3 className="text-xl md:text-xl font-semibold text-white">
-                      Certificados en IA
-                    </h3>  
+                      {t.faq.certTitle}
+                    </h3>
                   </div>
                 </div>
                 <p className="text-gray-200 text-lg leading-relaxed mb-6">
-                  En Cleverit contamos con la certificación de <span className="text-sky-400 font-bold">Microsoft Solutions Partner | Digital & App Innovation</span>.
+                  {t.faq.certDescription} <span className="text-sky-400 font-bold">{t.faq.certName}</span>.
                 </p>
 
-              <p className="text-sky-200 text-md leading-relaxed mb-4 font-light">  
-                Tu negocio en manos de un especialista reconocido por Microsoft.
+              <p className="text-sky-200 text-md leading-relaxed mb-4 font-light">
+                {t.faq.certFooter}
               </p>
               
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
                   <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
                     <CheckCircle className="w-4 h-4 text-green-400" />
-                    <span className="text-white text-sm font-medium">Modernizar y migrar tus aplicaciones empresariales a la nube</span>
+                    <span className="text-white text-sm font-medium">{t.faq.certFeature1}</span>
                   </div>
                   <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-3">
                     <CheckCircle className="w-4 h-4 text-green-400" />
-                    <span className="text-white text-sm font-medium">Impulsar la productividad de tus desarrolladores con Microsoft Azure</span>
+                    <span className="text-white text-sm font-medium">{t.faq.certFeature2}</span>
                   </div>
            
                 </div>
@@ -108,10 +110,10 @@ const FAQ = () => {
         {/* Header */}
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            FAQ
+            {t.faq.badge}
           </div>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-            Respuestas a preguntas comunes
+            {t.faq.title}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Resolvemos las dudas más comunes sobre nuestros servicios de LLM Apps y cómo pueden transformar tu negocio.

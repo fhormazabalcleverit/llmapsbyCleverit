@@ -1,36 +1,38 @@
 import React from 'react';
 import { Zap, BarChart3, Shield, Settings, TrendingUp } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useLanguage } from '../context/LanguageContext';
 
 const Benefits = () => {
+  const { t } = useLanguage();
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: gridRef, isVisible: gridVisible } = useScrollAnimation();
 
   const benefits = [
     {
       icon: Zap,
-      title: "Decisiones más rápidas",
-      description: "Pregunta y obtén respuestas inmediatas."
+      title: t.benefits.benefit1.title,
+      description: t.benefits.benefit1.description
     },
     {
       icon: BarChart3,
-      title: "Visión clara",
-      description: "Reportes y dashboards automáticos."
+      title: t.benefits.benefit2.title,
+      description: t.benefits.benefit2.description
     },
     {
       icon: Shield,
-      title: "Acceso seguro",
-      description: "Control de roles y permisos."
+      title: t.benefits.benefit3.title,
+      description: t.benefits.benefit3.description
     },
     {
       icon: Settings,
-      title: "Flexible",
-      description: "Se adapta a cualquier industria o modelo de negocio."
+      title: t.benefits.benefit4.title,
+      description: t.benefits.benefit4.description
     },
     {
       icon: TrendingUp,
-      title: "Escalable",
-      description: "Desde pequeñas empresas hasta grandes corporaciones."
+      title: t.benefits.benefit5.title,
+      description: t.benefits.benefit5.description
     }
   ];
 
@@ -40,7 +42,7 @@ const Benefits = () => {
         {/* Header */}
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Beneficios
+            {t.benefits.badge}
           </div>
            {/*
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-4xl mx-auto">

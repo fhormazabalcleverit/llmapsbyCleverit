@@ -22,120 +22,114 @@
     "statusOnline": "LLMaps is online and ready to help you"
   },
   "newProcess": {
-    "badge": "How it works",
-    "title": "Three simple steps to",
-    "titleHighlight": "revolutionize",
-    "titleEnd": "your business",
+    "badge": "Process",
+    "title": "How we transform your data into insights",
     "step1": {
-      "title": "Connect your data sources",
-      "description": "Easily integrate your existing databases, files, and APIs."
+      "title": "Upload your data",
+      "description": "Load files, connect databases or APIs securely and efficiently to power your AI system."
     },
     "step2": {
-      "title": "Train your AI assistant",
-      "description": "Our system learns from your data to provide accurate answers."
+      "title": "Intelligent processing",
+      "description": "Our AI organizes, structures and processes your information automatically with the highest security standards."
     },
     "step3": {
       "title": "Chat and get insights",
-      "description": "Interact naturally with your data and receive real-time analysis."
+      "description": "Ask questions in natural language and receive accurate answers, automated reports and visualizations."
     }
   },
   "benefits": {
     "badge": "Benefits",
-    "title": "Why choose",
-    "titleHighlight": "LLMApps?",
     "benefit1": {
-      "title": "No-code integration",
-      "description": "Connect your data without needing to code. Our system adapts to your existing infrastructure."
+      "title": "Faster decisions",
+      "description": "Ask questions and get immediate answers."
     },
     "benefit2": {
-      "title": "Enterprise security",
-      "description": "Your data stays secure with enterprise-grade encryption and full permission control."
+      "title": "Clear vision",
+      "description": "Automatic reports and dashboards."
     },
     "benefit3": {
-      "title": "Real-time analysis",
-      "description": "Get instant insights from your data with conversational responses and intuitive visualizations."
+      "title": "Secure access",
+      "description": "Role and permission control."
     },
     "benefit4": {
-      "title": "Guaranteed scalability",
-      "description": "From startups to enterprises, our infrastructure grows with your business."
+      "title": "Flexible",
+      "description": "Adapts to any industry or business model."
+    },
+    "benefit5": {
+      "title": "Scalable",
+      "description": "From small businesses to large corporations."
     }
   },
   "mastraHighlight": {
-    "badge": "Powered by Mastra",
-    "title": "Built on",
-    "titleHighlight": "cutting-edge technology",
-    "description": "LLMApps is developed with Mastra, the most advanced framework for creating conversational AI applications. Get the best of both worlds: the power of AI and simplicity of use.",
-    "feature1": "Advanced AI framework",
-    "feature2": "Real-time processing",
-    "feature3": "Scalable architecture",
-    "cta": "Learn more about Mastra"
+    "badge": "Open Source Framework",
+    "description1": "At",
+    "company": "LLMApps by CleverIT",
+    "description2": "we build our solutions on",
+    "mastra": "Mastra",
+    "description3": ", an open-source TypeScript framework designed for AI agents.",
+    "description4": "It allows us to deliver",
+    "highlight": "secure, monitored and reliable",
+    "description5": "applications, ready to scale in corporate environments.",
+    "feature1": "TypeScript",
+    "feature2": "Secure",
+    "feature3": "Monitored",
+    "feature4": "Scalable"
   },
   "process": {
-    "badge": "Our Process",
-    "title": "From idea to",
-    "titleHighlight": "implementation",
-    "titleEnd": "in weeks",
+    "badge": "Value with AI",
+    "title": "Why",
+    "titleHighlight": "Mastra",
+    "titleEnd": "adds value?",
     "step1": {
-      "title": "Discovery",
-      "description": "We analyze your needs and data sources to design the perfect solution."
+      "title": "Complete security and traceability",
+      "description": "Every decision, tool and result of the agent is traced, audited and can be reviewed or controlled manually (human-in-the-loop)."
     },
     "step2": {
-      "title": "Implementation",
-      "description": "Our team configures and integrates your LLMApp with your existing systems."
+      "title": "Real-time monitoring and automatic evaluations",
+      "description": "Agent behavior is observed live, with metrics and evals that guarantee quality, relevance and security of responses."
     },
     "step3": {
-      "title": "Training",
-      "description": "We train your team and fine-tune the system for optimal results."
+      "title": "Technological flexibility",
+      "description": "Integration with multiple models (OpenAI, Anthropic, Gemini, etc.) through a unified API, without needing to rewrite logic."
     },
     "step4": {
-      "title": "Ongoing support",
-      "description": "We accompany you with constant updates and improvements to your application."
+      "title": "Development efficiency",
+      "description": "Friendly environment for JavaScript/TypeScript teams, with CLI and playground that accelerate the development and testing cycle."
+    },
+    "step5": {
+      "title": "Workflows and persistent memory",
+      "description": "Durable flows, integrated telemetry and native support for RAG (Retrieval-Augmented Generation) that ensure consistency and scalability."
     }
   },
   "testimonials": {
     "badge": "Testimonials",
-    "title": "What our",
-    "titleHighlight": "clients say",
+    "title": "Check out what our clients think",
     "testimonial1": {
-      "quote": "LLMApps completely transformed how we analyze our data. What used to take hours now takes minutes.",
-      "author": "Maria Gonzalez",
-      "position": "CEO at TechCorp"
+      "text": "The implementation of LLM Apps completely transformed our operation. We can now process customer queries 10 times faster and with greater accuracy. It's incredible how AI understands the context of our business.",
+      "name": "María González",
+      "position": "CEO, TechSolutions"
     },
     "testimonial2": {
-      "quote": "The ability to converse with our data in natural language has revolutionized our decision making.",
-      "author": "Carlos Rodriguez",
-      "position": "Data Director at InnovateLab"
+      "text": "Since we implemented the LLM Apps solution, our sales team has increased its productivity by 300%. The ability to get immediate insights from our data is revolutionary.",
+      "name": "Carlos Mendoza",
+      "position": "Sales Director, InnovateCorp"
     },
     "testimonial3": {
-      "quote": "Incredible ease of integration. In less than a week we had everything running perfectly.",
-      "author": "Ana Martinez",
-      "position": "CTO at DataFlow"
+      "text": "The security and ease of use of the platform convinced us from day one. Our employees immediately adopted the tool and the results have exceeded all our expectations.",
+      "name": "Ana Rodríguez",
+      "position": "CTO, DataFlow Systems"
     }
   },
   "faq": {
     "badge": "FAQ",
-    "title": "Frequently",
-    "titleHighlight": "asked questions",
-    "question1": {
-      "q": "What types of data can I connect?",
-      "a": "You can connect virtually any data source: SQL and NoSQL databases, Excel files, CSV, PDFs, REST APIs, and more. Our system is extremely flexible and adapts to your needs."
-    },
-    "question2": {
-      "q": "Is it safe to connect my business data?",
-      "a": "Absolutely. We use enterprise-grade encryption, comply with international security standards, and your data is never shared with third parties. Plus, you have full control over permissions and access."
-    },
-    "question3": {
-      "q": "How long does implementation take?",
-      "a": "Depending on the complexity of your project, basic implementation can be ready in 1-2 weeks. More complex projects may take 4-6 weeks. We always work to deliver value as quickly as possible."
-    },
-    "question4": {
-      "q": "Do I need technical knowledge to use LLMApps?",
-      "a": "No, LLMApps is designed to be used by anyone. If you can write a text message, you can use our platform. The conversational interface is intuitive and natural."
-    },
-    "question5": {
-      "q": "What kind of support do you offer?",
-      "a": "We offer complete support that includes initial training, detailed documentation, and ongoing assistance. Depending on your plan, you'll have access to email, chat, or even a dedicated account manager."
-    }
+    "title": "Answers to common questions",
+    "certBadge": "Verified experts",
+    "certTitle": "AI Certified",
+    "certDescription": "At Cleverit we have the certification of",
+    "certName": "Microsoft Solutions Partner | Digital & App Innovation",
+    "certFooter": "Your business in the hands of a Microsoft-recognized specialist.",
+    "certFeature1": "Modernize and migrate your enterprise applications to the cloud",
+    "certFeature2": "Boost your developers' productivity with Microsoft Azure"
   },
   "pricing": {
     "badge": "Plans & Pricing",

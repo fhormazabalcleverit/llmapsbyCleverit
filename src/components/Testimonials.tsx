@@ -1,31 +1,33 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useLanguage } from '../context/LanguageContext';
 
 const Testimonials = () => {
+  const { t } = useLanguage();
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: testimonialsRef, isVisible: testimonialsVisible } = useScrollAnimation();
 
   const testimonials = [
     {
       rating: 5,
-      text: "La implementación de LLM Apps transformó completamente nuestra operación. Ahora podemos procesar consultas de clientes 10 veces más rápido y con mayor precisión. Es increíble cómo la IA entiende el contexto de nuestro negocio.",
-      name: "María González",
-      position: "CEO, TechSolutions",
+      text: t.testimonials.testimonial1.text,
+      name: t.testimonials.testimonial1.name,
+      position: t.testimonials.testimonial1.position,
       avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face"
     },
     {
       rating: 5,
-      text: "Desde que implementamos la solución de LLM Apps, nuestro equipo de ventas ha aumentado su productividad en un 300%. La capacidad de obtener insights inmediatos de nuestros datos es revolucionaria.",
-      name: "Carlos Mendoza",
-      position: "Director de Ventas, InnovateCorp",
+      text: t.testimonials.testimonial2.text,
+      name: t.testimonials.testimonial2.name,
+      position: t.testimonials.testimonial2.position,
       avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face"
     },
     {
       rating: 5,
-      text: "La seguridad y facilidad de uso de la plataforma nos convenció desde el primer día. Nuestros empleados adoptaron la herramienta inmediatamente y los resultados han superado todas nuestras expectativas.",
-      name: "Ana Rodríguez",
-      position: "CTO, DataFlow Systems",
+      text: t.testimonials.testimonial3.text,
+      name: t.testimonials.testimonial3.name,
+      position: t.testimonials.testimonial3.position,
       avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face"
     }
   ];
@@ -36,10 +38,10 @@ const Testimonials = () => {
         {/* Header */}
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Testimoniales
+            {t.testimonials.badge}
           </div>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Revisa lo que opinan nuestros clientes
+            {t.testimonials.title}
           </h2>
         </div>
 

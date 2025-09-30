@@ -1,7 +1,9 @@
 import React from 'react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useLanguage } from '../context/LanguageContext';
 
 const Process = () => {
+  const { t } = useLanguage();
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: cardsRef, isVisible: cardsVisible } = useScrollAnimation();
 
@@ -9,32 +11,32 @@ const Process = () => {
     {
       number: "01",
       emogi: "🔒",
-      title: "Seguridad y trazabilidad total",
-      description: "Cada decisión, herramienta y resultado del agente es trazado, auditado y puede ser revisado o controlado manualmente (human-in-the-loop)."
+      title: t.process.step1.title,
+      description: t.process.step1.description
     },
     {
-      number: "02", 
+      number: "02",
       emogi: "📊",
-      title: "Monitoreo en tiempo real y evaluaciones automáticas",
-      description: "El comportamiento de los agentes se observa en vivo, con métricas y *evals* que garantizan calidad, relevancia y seguridad de las respuestas."
+      title: t.process.step2.title,
+      description: t.process.step2.description
     },
     {
       number: "03",
       emogi: "🔄",
-      title: "Flexibilidad tecnológica", 
-      description: "Integración con múltiples modelos (OpenAI, Anthropic, Gemini, etc.) a través de una API unificada, sin necesidad de reescribir lógica."
+      title: t.process.step3.title,
+      description: t.process.step3.description
     },
     {
       number: "04",
       emogi: "⚡",
-      title: " Eficiencia en desarrollo",
-      description: "Entorno amigable para equipos JavaScript/TypeScript, con CLI y playground que aceleran el ciclo de desarrollo y pruebas."
+      title: t.process.step4.title,
+      description: t.process.step4.description
     },
     {
       number: "05",
       emogi: "🧠",
-      title: "Workflows y memoria persistente",
-      description: "Flujos durables, telemetría integrada y soporte nativo para RAG (Retrieval-Augmented Generation) que aseguran consistencia y escalabilidad."
+      title: t.process.step5.title,
+      description: t.process.step5.description
     }
   ];
 
@@ -52,11 +54,11 @@ const Process = () => {
           </div>
           */}
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Valor con IA
+            {t.process.badge}
           </div>
           <div className="max-w-7xl">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              ¿Por qué <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Mastra</span> suma valor?
+              {t.process.title} <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">{t.process.titleHighlight}</span> {t.process.titleEnd}
             </h2>
           </div>
         </div>

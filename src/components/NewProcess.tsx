@@ -44,7 +44,7 @@ const NewProcess = () => {
         
 
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
-          <div className="inline-block bg-gray-800 text-gray-300 px-2 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-block bg-gray-800 text-gray-300 px-4 py-1 rounded-full text-sm font-medium mb-6">
             Proceso
           </div>
           <h2 className="text-xl md:text-xl lg:text-2xl font-bold text-white leading-tight max-w-4xl mx-auto">

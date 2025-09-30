@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-xl md:text-xl text-gray-500 mb-12 leading-relaxed max-w-3xl mx-auto animate-slide-up-delay">
+          <p className="text-xl md:text-xl text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto animate-slide-up-delay">
             Transformamos tu negocio con LLM Apps y potencian la productividad y automatización de tu negocio.
           </p>
 

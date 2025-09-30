@@ -55,7 +55,7 @@ const Process = () => {
             Valor con IA
           </div>
           <div className="max-w-7xl">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            <h2 className="text-3parxl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
               ¿Por qué <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Mastra</span> suma valor?
             </h2>
           </div>

@@ -39,12 +39,12 @@ const NewProcess = () => {
   ];
 
   return (
-    <section className="bg-backblack ">
+    <section className="bg-backblack pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
 
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
-          <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-block bg-gray-800 text-gray-300 px-2 py-2 rounded-full text-sm font-medium mb-6">
             Proceso
           </div>
           <h2 className="text-xl md:text-xl lg:text-2xl font-bold text-white leading-tight max-w-4xl mx-auto">

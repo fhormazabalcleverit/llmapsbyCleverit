@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="flex items-center justify-center space-x-2 mb-8 animate-fade-in">
             <div className="flex items-center">
               <Star className="w-5 h-5 text-purple-500 fill-current" />
-              <span className="text-white font-medium ml-2">SOLUCIONES DE IA AVANZADAS</span>
+              <span className="text-white font-medium ml-2">Soluciones de IA avanzadas</span>
             </div>
           </div>
 

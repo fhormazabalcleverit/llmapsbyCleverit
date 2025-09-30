@@ -123,13 +123,38 @@
   "faq": {
     "badge": "FAQ",
     "title": "Answers to common questions",
+    "subtitle": "We answer the most common questions about our LLM Apps services and how they can transform your business.",
     "certBadge": "Verified experts",
     "certTitle": "AI Certified",
     "certDescription": "At Cleverit we have the certification of",
     "certName": "Microsoft Solutions Partner | Digital & App Innovation",
     "certFooter": "Your business in the hands of a Microsoft-recognized specialist.",
     "certFeature1": "Modernize and migrate your enterprise applications to the cloud",
-    "certFeature2": "Boost your developers' productivity with Microsoft Azure"
+    "certFeature2": "Boost your developers' productivity with Microsoft Azure",
+    "question1": {
+      "q": "What exactly are LLM Apps?",
+      "a": "LLM Apps are intelligent applications that use large language models to process, analyze and generate content naturally. They allow companies to automate complex communication and data analysis tasks."
+    },
+    "question2": {
+      "q": "What are the main features of LLMApps?",
+      "a": "Our LLM Apps include advanced natural language processing, integration with existing databases, customization according to your industry, automatic scalability and intuitive interfaces for non-technical users."
+    },
+    "question3": {
+      "q": "Is my data secure when using LLM Apps?",
+      "a": "Absolutely. We implement end-to-end encryption, comply with international security standards such as ISO 27001, and your data is never shared with third parties. Additionally, we offer on-premise deployment options for maximum security."
+    },
+    "question4": {
+      "q": "What differentiates your LLM Apps from other AI solutions?",
+      "a": "We specialize in customized solutions for each business, offer complete integration with existing systems, Spanish support, and a consultative approach that ensures AI truly solves your specific problems."
+    },
+    "question5": {
+      "q": "What is the cost of developing an LLM App?",
+      "a": "The cost varies depending on complexity and specific features. We offer plans starting at $2,000 USD per month for basic solutions, up to customized enterprise projects. Contact us for a detailed quote."
+    },
+    "question6": {
+      "q": "What type of support do you offer after launch?",
+      "a": "We provide 24/7 technical support, regular model updates, performance monitoring, team training, and continuous improvements based on actual use of your application."
+    }
   },
   "pricing": {
     "badge": "Plans & Pricing",

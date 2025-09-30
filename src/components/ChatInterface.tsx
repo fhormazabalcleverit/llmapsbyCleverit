@@ -64,7 +64,7 @@ const ChatInterface = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto mt-16 mb-8">
+    <div className="max-w-2xl mx-auto mt-16 mb-8">
       {/* Chat Interface Container */}
       <div className="bg-gradient-to-r from-pink-500/20 via-purple-600 to-pink-500 p-1 rounded-3xl backdrop-blur-sm">
         <div className="bg-backblack rounded-3xl p-6 border border-gray-700/30">

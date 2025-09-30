@@ -3,7 +3,7 @@ import { Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-backblack py-16 relative overflow-hidden pt-40">
+    <footer className="bg-backblack py-16 relative overflow-hidden pt-60">
       {/* Background SVG */}
       <div className="absolute inset-0 bg-no-repeat bg-bottom bg-[length:100%_auto] md:bg-cover" style={{ backgroundImage: 'url(/footer.svg)' }}></div>
 

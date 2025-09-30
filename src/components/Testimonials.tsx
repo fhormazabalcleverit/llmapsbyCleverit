@@ -38,7 +38,7 @@ const Testimonials = () => {
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
             Testimoniales
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Revisa lo que opinan nuestros clientes
           </h2>
         </div>

@@ -126,7 +126,7 @@ const ChatInterface = () => {
           {/* Status Indicator */}
           <div className="flex items-center justify-center gap-2 text-gray-400">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-sm">LLMaps está en línea y listo para ayudarte</span>
+            <span className="text-xs">LLMaps está en línea y listo para ayudarte</span>
           </div>
         </div>
       </div>

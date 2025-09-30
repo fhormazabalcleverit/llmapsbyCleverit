@@ -76,7 +76,7 @@ const Benefits = () => {
                 </h3>
                 
                 {/* Description */}
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-400 leading-relaxed">
                   {benefit.description}
                 </p>
               </div>

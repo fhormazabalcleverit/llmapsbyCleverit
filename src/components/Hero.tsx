@@ -32,7 +32,7 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-xl md:text-xl text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto animate-slide-up-delay">
+          <p className="text-sm md:text-xl text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto animate-slide-up-delay">
             {t.hero.description}
           </p>
 

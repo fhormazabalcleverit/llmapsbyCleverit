@@ -71,7 +71,7 @@ const Benefits = () => {
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-white mb-4 leading-tight">
+                <h3 className="text-xl font-bold text-white mb-4 leading-tight group-hover:text-pink-500">
                   {benefit.title}
                 </h3>
                 

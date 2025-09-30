@@ -70,7 +70,7 @@ const Testimonials = () => {
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <h4 className="text-white font-semibold text-lg">
+                  <h4 className="text-white font-semibold text-md">
                     {testimonial.name}
                   </h4>
                   <p className="text-gray-400 text-sm">

@@ -77,11 +77,11 @@ const ChatInterface = () => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  className="w-full bg-transparent text-white text-lg outline-none"
+                  className="w-full bg-transparent text-white text-sm md:text-lg outline-none text-left"
                 />
                 {!message && (
                   <div className="absolute inset-0 flex items-center pointer-events-none">
-                    <span className="text-gray-400 text-md">
+                    <span className="text-gray-400 text-sm md:text-md text-left">
                       {currentPlaceholder}
                       <span className="animate-pulse">|</span>
                     </span>

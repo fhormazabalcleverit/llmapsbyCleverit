@@ -10,7 +10,7 @@ const Footer = () => {
         style={{
           backgroundImage: 'url(/footer.svg)',
           height: '100%',
-          maxHeight: '1400px'
+          
         }}
       ></div>
 

@@ -41,7 +41,7 @@ const FAQ = () => {
 
   return (
     <section className="bg-backblack py-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* AI Certification Banner */}
         <div ref={bannerRef} className={`mb-20 fade-in-up ${bannerVisible ? 'animate' : ''}`}>
           <div className="relative bg-gradient-to-r from-sky-500/20 via-sky-600/10 to-blue-500/20 border border-sky-500/50 rounded-3xl p-8 md:p-12 backdrop-blur-sm overflow-hidden">

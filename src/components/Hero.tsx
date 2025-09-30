@@ -12,7 +12,8 @@ const Hero = () => {
       {/* Background SVG */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/background01.svg)' }}></div>
       
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-20 md:mt-0">
+      <div className="max-w-8xl mx-auto px-6
+        sm:px-6 lg:px-8 relative z-10 mt-20 md:mt-0">
         <div className="text-center max-w-4xl mx-auto">
           {/* Rating Section */}
           <div className="flex items-center justify-center space-x-2 mb-8 animate-fade-in">

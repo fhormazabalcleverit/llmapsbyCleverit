@@ -10,7 +10,7 @@ const ChatInterface = () => {
 
   const phrases = [
     "¿Cual es el mes con más ventas hasta ahora",
-    "Si mis ventas se mantienen ¿Cuando tendré falta de stock?",
+    "¿Cuando puedo tener falta de stock?",
     "Creame un dashboard de productividad de mi negocio"
   ];
 

@@ -62,7 +62,7 @@ const NewProcess = () => {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col">
               {/* Card */}
-              <div className="group relative bg-blackback border border-gray-800 hover:border-pink-500/50 rounded-2xl p-0 transition-all duration-500 ease-in-out min-h-[200px] flex items-center justify-center mb-6">
+              <div className="group relative  border border-gray-800 hover:border-pink-500/50 rounded-2xl p-0 transition-all duration-500 ease-in-out min-h-[200px] flex items-center justify-center mb-6">
                 {index === 1 ? (
                   /* Animated Loader for center card */
                   <div className="flex flex-col items-center justify-center space-y-6">

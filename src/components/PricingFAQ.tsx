@@ -1,36 +1,38 @@
 import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useLanguage } from '../context/LanguageContext';
 
 const PricingFAQ = () => {
+  const { t } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: faqRef, isVisible: faqVisible } = useScrollAnimation();
 
   const faqs = [
     {
-      question: "¿Qué son exactamente las LLM Apps?",
-      answer: "Las LLM Apps son aplicaciones inteligentes que utilizan modelos de lenguaje grandes para procesar, analizar y generar contenido de manera natural. Permiten a las empresas automatizar tareas complejas de comunicación y análisis de datos."
+      question: t.pricingFaq.question1.q,
+      answer: t.pricingFaq.question1.a
     },
     {
-      question: "¿Cuáles son las características principales de LLMApps?",
-      answer: "Nuestras LLM Apps incluyen procesamiento de lenguaje natural avanzado, integración con bases de datos existentes, personalización según tu industria, escalabilidad automática y interfaces intuitivas para usuarios no técnicos."
+      question: t.pricingFaq.question2.q,
+      answer: t.pricingFaq.question2.a
     },
     {
-      question: "¿Mis datos están seguros al usar LLM Apps?",
-      answer: "Absolutamente. Implementamos encriptación de extremo a extremo, cumplimos con estándares internacionales de seguridad como ISO 27001, y tus datos nunca se comparten con terceros. Además, ofrecemos opciones de despliegue on-premise para máxima seguridad."
+      question: t.pricingFaq.question3.q,
+      answer: t.pricingFaq.question3.a
     },
     {
-      question: "¿Qué diferencia a sus LLM Apps de otras soluciones de IA?",
-      answer: "Nos especializamos en soluciones personalizadas para cada negocio, ofrecemos integración completa con sistemas existentes, soporte en español, y un enfoque consultivo que garantiza que la IA realmente resuelva tus problemas específicos."
+      question: t.pricingFaq.question4.q,
+      answer: t.pricingFaq.question4.a
     },
     {
-      question: "¿Cuál es el costo de desarrollar una LLM App?",
-      answer: "El costo varía según la complejidad y características específicas. Ofrecemos planes desde $2,000 USD mensuales para soluciones básicas, hasta proyectos enterprise personalizados. Contacta con nosotros para una cotización detallada."
+      question: t.pricingFaq.question5.q,
+      answer: t.pricingFaq.question5.a
     },
     {
-      question: "¿Qué tipo de soporte ofrecen después del lanzamiento?",
-      answer: "Proporcionamos soporte técnico 24/7, actualizaciones regulares del modelo, monitoreo de rendimiento, capacitación para tu equipo, y mejoras continuas basadas en el uso real de tu aplicación."
+      question: t.pricingFaq.question6.q,
+      answer: t.pricingFaq.question6.a
     }
   ];
 
@@ -44,13 +46,13 @@ const PricingFAQ = () => {
         {/* Header */}
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Preguntas Frecuentes
+            {t.pricingFaq.badge}
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            ¿Tienes dudas sobre los planes?
+            {t.pricingFaq.title}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros planes y servicios.
+            {t.pricingFaq.subtitle}
           </p>
         </div>
 

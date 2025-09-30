@@ -1,78 +1,80 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useLanguage } from '../context/LanguageContext';
 
 const Pricing = () => {
+  const { t } = useLanguage();
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: plansRef, isVisible: plansVisible } = useScrollAnimation();
 
   const plans = [
     {
-      name: "Starter",
-      price: "$2,000",
-      period: "USD/mes",
-      description: "Perfecto para pequeñas empresas que inician con IA",
+      name: t.pricing.starter.name,
+      price: t.pricing.starter.price,
+      period: t.pricing.starter.period,
+      description: t.pricing.starter.description,
       features: [
-        "Hasta 10,000 consultas mensuales",
-        "1 fuente de datos",
-        "Chat básico con IA",
-        "Reportes estándar",
-        "Soporte por email",
-        "Integración básica"
+        t.pricing.starter.feature1,
+        t.pricing.starter.feature2,
+        t.pricing.starter.feature3,
+        t.pricing.starter.feature4,
+        t.pricing.starter.feature5,
+        t.pricing.starter.feature6
       ],
       notIncluded: [
-        "APIs personalizadas",
-        "Análisis avanzado",
-        "Soporte 24/7"
+        t.pricing.starter.notIncluded1,
+        t.pricing.starter.notIncluded2,
+        t.pricing.starter.notIncluded3
       ],
       popular: false,
-      buttonText: "Comenzar ahora",
+      buttonText: t.pricing.starter.cta,
       buttonStyle: "border-2 border-gray-600 hover:border-pink-500 text-white hover:text-pink-400"
     },
     {
-      name: "Professional",
-      price: "$5,000",
-      period: "USD/mes",
-      description: "Ideal para empresas en crecimiento con necesidades avanzadas",
+      name: t.pricing.professional.name,
+      price: t.pricing.professional.price,
+      period: t.pricing.professional.period,
+      description: t.pricing.professional.description,
       features: [
-        "Hasta 50,000 consultas mensuales",
-        "5 fuentes de datos",
-        "Chat avanzado con IA",
-        "Dashboards personalizados",
-        "APIs personalizadas",
-        "Análisis predictivo",
-        "Soporte prioritario",
-        "Integraciones múltiples"
+        t.pricing.professional.feature1,
+        t.pricing.professional.feature2,
+        t.pricing.professional.feature3,
+        t.pricing.professional.feature4,
+        t.pricing.professional.feature5,
+        t.pricing.professional.feature6,
+        t.pricing.professional.feature7,
+        t.pricing.professional.feature8
       ],
       notIncluded: [
-        "Despliegue on-premise",
-        "Consultor dedicado"
+        t.pricing.professional.notIncluded1,
+        t.pricing.professional.notIncluded2
       ],
       popular: true,
-      buttonText: "Más popular",
+      buttonText: t.pricing.professional.cta,
       buttonStyle: "bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white"
     },
     {
-      name: "Enterprise",
-      price: "Personalizado",
-      period: "",
-      description: "Solución completa para grandes corporaciones",
+      name: t.pricing.enterprise.name,
+      price: t.pricing.enterprise.price,
+      period: t.pricing.enterprise.period,
+      description: t.pricing.enterprise.description,
       features: [
-        "Consultas ilimitadas",
-        "Fuentes de datos ilimitadas",
-        "IA completamente personalizada",
-        "Dashboards enterprise",
-        "APIs ilimitadas",
-        "Análisis avanzado y ML",
-        "Despliegue on-premise",
-        "Consultor dedicado",
-        "Soporte 24/7",
-        "SLA garantizado",
-        "Capacitación del equipo"
+        t.pricing.enterprise.feature1,
+        t.pricing.enterprise.feature2,
+        t.pricing.enterprise.feature3,
+        t.pricing.enterprise.feature4,
+        t.pricing.enterprise.feature5,
+        t.pricing.enterprise.feature6,
+        t.pricing.enterprise.feature7,
+        t.pricing.enterprise.feature8,
+        t.pricing.enterprise.feature9,
+        t.pricing.enterprise.feature10,
+        t.pricing.enterprise.feature11
       ],
       notIncluded: [],
       popular: false,
-      buttonText: "Contactar ventas",
+      buttonText: t.pricing.enterprise.cta,
       buttonStyle: "border-2 border-gray-600 hover:border-pink-500 text-white hover:text-pink-400"
     }
   ];
@@ -83,13 +85,13 @@ const Pricing = () => {
         {/* Header */}
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Planes
+            {t.pricing.badge}
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-4xl mx-auto mb-6">
-            Elige el plan perfecto para tu negocio
+            {t.pricing.title}
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Desde startups hasta grandes corporaciones, tenemos la solución de IA que se adapta a tus necesidades y presupuesto.
+            {t.pricing.subtitle}
           </p>
         </div>
 
@@ -114,7 +116,7 @@ const Pricing = () => {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
-                    Más Popular
+                    {t.pricing.popularBadge}
                   </div>
                 </div>
               )}

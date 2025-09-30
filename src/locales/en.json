@@ -157,73 +157,89 @@
     }
   },
   "pricing": {
-    "badge": "Plans & Pricing",
-    "title": "Choose the perfect plan for",
-    "titleHighlight": "your business",
-    "monthly": "Monthly",
-    "annually": "Annually",
-    "save": "Save 20%",
+    "badge": "Plans",
+    "title": "Choose the perfect plan for your business",
+    "subtitle": "From startups to large corporations, we have the AI solution that fits your needs and budget.",
+    "popularBadge": "Most Popular",
     "starter": {
       "name": "Starter",
-      "description": "Perfect for small teams getting started",
-      "price": "$299",
-      "period": "/month",
-      "feature1": "Up to 10,000 queries/month",
-      "feature2": "2 data sources",
-      "feature3": "Email support",
-      "feature4": "Basic updates",
-      "feature5": "Analytics dashboard",
-      "cta": "Start free trial"
+      "price": "$2,000",
+      "period": "USD/month",
+      "description": "Perfect for small businesses starting with AI",
+      "feature1": "Up to 10,000 monthly queries",
+      "feature2": "1 data source",
+      "feature3": "Basic AI chat",
+      "feature4": "Standard reports",
+      "feature5": "Email support",
+      "feature6": "Basic integration",
+      "notIncluded1": "Custom APIs",
+      "notIncluded2": "Advanced analytics",
+      "notIncluded3": "24/7 support",
+      "cta": "Get started now"
     },
     "professional": {
       "name": "Professional",
-      "description": "For growing businesses",
-      "price": "$799",
-      "period": "/month",
-      "popular": "Most Popular",
-      "feature1": "Up to 50,000 queries/month",
-      "feature2": "10 data sources",
-      "feature3": "Priority 24/7 support",
-      "feature4": "Advanced updates",
-      "feature5": "Advanced analytics",
-      "feature6": "Custom API",
-      "feature7": "Training included",
-      "cta": "Start free trial"
+      "price": "$5,000",
+      "period": "USD/month",
+      "description": "Ideal for growing companies with advanced needs",
+      "feature1": "Up to 50,000 monthly queries",
+      "feature2": "5 data sources",
+      "feature3": "Advanced AI chat",
+      "feature4": "Custom dashboards",
+      "feature5": "Custom APIs",
+      "feature6": "Predictive analytics",
+      "feature7": "Priority support",
+      "feature8": "Multiple integrations",
+      "notIncluded1": "On-premise deployment",
+      "notIncluded2": "Dedicated consultant",
+      "cta": "Most popular"
     },
     "enterprise": {
       "name": "Enterprise",
-      "description": "Custom solutions for large organizations",
       "price": "Custom",
+      "period": "",
+      "description": "Complete solution for large corporations",
       "feature1": "Unlimited queries",
       "feature2": "Unlimited data sources",
-      "feature3": "Dedicated account manager",
-      "feature4": "99.9% SLA guaranteed",
-      "feature5": "Dedicated infrastructure",
-      "feature6": "Custom integrations",
-      "feature7": "On-site training",
-      "feature8": "Security audits",
+      "feature3": "Fully customized AI",
+      "feature4": "Enterprise dashboards",
+      "feature5": "Unlimited APIs",
+      "feature6": "Advanced analytics and ML",
+      "feature7": "On-premise deployment",
+      "feature8": "Dedicated consultant",
+      "feature9": "24/7 support",
+      "feature10": "Guaranteed SLA",
+      "feature11": "Team training",
       "cta": "Contact sales"
     }
   },
   "pricingFaq": {
-    "badge": "Pricing Questions",
-    "title": "Frequently asked questions about",
-    "titleHighlight": "our plans",
+    "badge": "Frequently Asked Questions",
+    "title": "Do you have questions about the plans?",
+    "subtitle": "Here you'll find answers to the most common questions about our plans and services.",
     "question1": {
-      "q": "Can I change plans at any time?",
-      "a": "Yes, you can upgrade or change your plan at any time. Changes apply immediately and you only pay the prorated difference."
+      "q": "What exactly are LLM Apps?",
+      "a": "LLM Apps are intelligent applications that use large language models to process, analyze and generate content naturally. They allow companies to automate complex communication and data analysis tasks."
     },
     "question2": {
-      "q": "What happens if I exceed my query limit?",
-      "a": "We'll notify you when you approach your limit. You can choose to upgrade your plan or purchase additional query packages as needed."
+      "q": "What are the main features of LLMApps?",
+      "a": "Our LLM Apps include advanced natural language processing, integration with existing databases, customization according to your industry, automatic scalability and intuitive interfaces for non-technical users."
     },
     "question3": {
-      "q": "Do you offer discounts for non-profit organizations?",
-      "a": "Yes, we offer special discounts for non-profit and educational organizations. Contact us to learn more details."
+      "q": "Is my data secure when using LLM Apps?",
+      "a": "Absolutely. We implement end-to-end encryption, comply with international security standards such as ISO 27001, and your data is never shared with third parties. Additionally, we offer on-premise deployment options for maximum security."
     },
     "question4": {
-      "q": "Does the free trial require a credit card?",
-      "a": "No, you can start your 14-day free trial without needing to enter payment information. You only need to create an account."
+      "q": "What differentiates your LLM Apps from other AI solutions?",
+      "a": "We specialize in customized solutions for each business, offer complete integration with existing systems, Spanish support, and a consultative approach that ensures AI truly solves your specific problems."
+    },
+    "question5": {
+      "q": "What is the cost of developing an LLM App?",
+      "a": "The cost varies depending on complexity and specific features. We offer plans starting at $2,000 USD per month for basic solutions, up to customized enterprise projects. Contact us for a detailed quote."
+    },
+    "question6": {
+      "q": "What type of support do you offer after launch?",
+      "a": "We provide 24/7 technical support, regular model updates, performance monitoring, team training, and continuous improvements based on actual use of your application."
     }
   },
   "quote": {

@@ -12,7 +12,7 @@ const Hero = () => {
       {/* Background SVG */}
       <div className="absolute inset-0 bg-no-repeat bg-cover bg-center md:bg-cover" 
         style={{ backgroundImage: 'url(/background01.svg)', 
-                border:1px solid red,
+                border: '1px solid red',
                 backgroundSize: 'auto 100%', 
                 backgroundPosition: 'center' }}></div>
       

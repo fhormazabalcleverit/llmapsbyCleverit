@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="bg-black min-h-screen flex items-center relative overflow-hidden">
       {/* Background SVG */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-full h-full bg-center bg-no-repeat bg-contain" style={{ backgroundImage: 'url(/background01.svg)' }}></div>
+        <div className="w-full bg-center bg-no-repeat bg-contain" style={{ backgroundImage: 'url(/background01.svg)' }}></div>
       </div>
       
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

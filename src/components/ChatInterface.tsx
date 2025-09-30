@@ -81,7 +81,7 @@ const ChatInterface = () => {
                 />
                 {!message && (
                   <div className="absolute inset-0 flex items-center pointer-events-none">
-                    <span className="text-gray-400 text-sm">
+                    <span className="text-gray-400 text-lg">
                       {currentPlaceholder}
                       <span className="animate-pulse">|</span>
                     </span>

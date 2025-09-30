@@ -99,10 +99,16 @@ const Pricing = () => {
             <div
               key={index}
               className={`relative bg-gray-900/50 border rounded-2xl p-8 transition-all duration-300 hover:bg-gray-800/50 ${
-                plan.popular 
-                  ? 'border-pink-500 ring-2 ring-pink-500/20' 
+                plan.popular
+                  ? 'border-pink-500 ring-2 ring-pink-500/20'
                   : 'border-gray-700 hover:border-pink-500/50'
               }`}
+              style={{
+                backgroundImage: 'url(/card.svg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}
             >
               {/* Popular Badge */}
               {plan.popular && (

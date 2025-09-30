@@ -243,30 +243,24 @@
     }
   },
   "quote": {
-    "badge": "Request a Quote",
-    "title": "Tell us about your",
-    "titleHighlight": "project",
+    "badge": "Quote",
+    "title": "Get a quote with us",
+    "subtitle": "Tell us about your project and we'll help you find the perfect AI solution for your business.",
     "form": {
       "name": "Full name",
-      "namePlaceholder": "John Doe",
+      "namePlaceholder": "Enter your full name",
+      "industry": "Industry or sector",
+      "industryPlaceholder": "E.g: Technology, Retail, Healthcare, etc.",
       "email": "Email",
-      "emailPlaceholder": "john@company.com",
-      "company": "Company",
-      "companyPlaceholder": "My Company Inc.",
-      "phone": "Phone",
-      "phonePlaceholder": "+1 234 567 8900",
-      "project": "Tell us about your project",
-      "projectPlaceholder": "Describe your project, needs and goals...",
-      "submit": "Submit request",
-      "submitting": "Submitting..."
+      "emailPlaceholder": "you@company.com",
+      "contactMethod": "How do you prefer to be contacted?",
+      "contactEmail": "Email",
+      "contactPhone": "Phone",
+      "contactWhatsApp": "WhatsApp",
+      "submit": "Submit quote",
+      "successMessage": "Thank you for your interest! We'll contact you soon."
     },
-    "info": {
-      "title": "Why choose us?",
-      "point1": "Response in less than 24 hours",
-      "point2": "Free initial consultation",
-      "point3": "No-commitment quote",
-      "point4": "Implementation in weeks, not months"
-    }
+    "footerNote": "We will contact you within a maximum of 24 hours"
   },
   "footer": {
     "description": "We transform data into intelligent conversations. Power your business with cutting-edge conversational AI.",

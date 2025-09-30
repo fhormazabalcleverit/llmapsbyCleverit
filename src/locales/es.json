@@ -243,30 +243,24 @@
     }
   },
   "quote": {
-    "badge": "Solicita una Cotización",
-    "title": "Cuéntanos sobre tu",
-    "titleHighlight": "proyecto",
+    "badge": "Cotización",
+    "title": "Cotiza con nosotros",
+    "subtitle": "Cuéntanos sobre tu proyecto y te ayudaremos a encontrar la solución perfecta de IA para tu negocio.",
     "form": {
       "name": "Nombre completo",
-      "namePlaceholder": "Juan Pérez",
+      "namePlaceholder": "Ingresa tu nombre completo",
+      "industry": "Rubro o industria",
+      "industryPlaceholder": "Ej: Tecnología, Retail, Salud, etc.",
       "email": "Email",
-      "emailPlaceholder": "juan@empresa.com",
-      "company": "Empresa",
-      "companyPlaceholder": "Mi Empresa S.A.",
-      "phone": "Teléfono",
-      "phonePlaceholder": "+56 9 1234 5678",
-      "project": "Cuéntanos sobre tu proyecto",
-      "projectPlaceholder": "Describe tu proyecto, necesidades y objetivos...",
-      "submit": "Enviar solicitud",
-      "submitting": "Enviando..."
+      "emailPlaceholder": "tu@empresa.com",
+      "contactMethod": "¿Cómo prefieres que te contactemos?",
+      "contactEmail": "Email",
+      "contactPhone": "Teléfono",
+      "contactWhatsApp": "WhatsApp",
+      "submit": "Enviar cotización",
+      "successMessage": "¡Gracias por tu interés! Te contactaremos pronto."
     },
-    "info": {
-      "title": "¿Por qué elegirnos?",
-      "point1": "Respuesta en menos de 24 horas",
-      "point2": "Consultoría inicial gratuita",
-      "point3": "Presupuesto sin compromiso",
-      "point4": "Implementación en semanas, no meses"
-    }
+    "footerNote": "Nos pondremos en contacto contigo en un plazo máximo de 24 horas"
   },
   "footer": {
     "description": "Transformamos datos en conversaciones inteligentes. Potencia tu negocio con IA conversacional de última generación.",

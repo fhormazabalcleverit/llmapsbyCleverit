@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MessageCircle, Send, User, Building, AtSign } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useLanguage } from '../context/LanguageContext';
 
 const QuoteForm = () => {
+  const { t } = useLanguage();
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: formRef, isVisible: formVisible } = useScrollAnimation();
 
@@ -24,14 +26,13 @@ const QuoteForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Aquí iría la lógica para enviar el formulario
-    alert('¡Gracias por tu interés! Te contactaremos pronto.');
+    alert(t.quote.form.successMessage);
   };
 
   const contactMethods = [
-    { value: 'email', label: 'Email', icon: Mail },
-    { value: 'telefono', label: 'Teléfono', icon: Phone },
-    { value: 'whatsapp', label: 'WhatsApp', icon: MessageCircle }
+    { value: 'email', label: t.quote.form.contactEmail, icon: Mail },
+    { value: 'telefono', label: t.quote.form.contactPhone, icon: Phone },
+    { value: 'whatsapp', label: t.quote.form.contactWhatsApp, icon: MessageCircle }
   ];
 
   return (
@@ -40,13 +41,13 @@ const QuoteForm = () => {
         {/* Header */}
         <div ref={headerRef} className={`text-center mb-16 fade-in-up ${headerVisible ? 'animate' : ''}`}>
           <div className="inline-block bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Cotización
+            {t.quote.badge}
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-4xl mx-auto mb-6">
-            Cotiza con nosotros
+            {t.quote.title}
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Cuéntanos sobre tu proyecto y te ayudaremos a encontrar la solución perfecta de IA para tu negocio.
+            {t.quote.subtitle}
           </p>
         </div>
 
@@ -57,7 +58,7 @@ const QuoteForm = () => {
               {/* Nombre */}
               <div>
                 <label htmlFor="nombre" className="block text-white text-lg font-semibold mb-3">
-                  Nombre completo
+                  {t.quote.form.name}
                 </label>
                 <div className="relative">
                   <User className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -69,7 +70,7 @@ const QuoteForm = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full bg-gray-800 border border-gray-600 rounded-xl pl-12 pr-4 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
-                    placeholder="Ingresa tu nombre completo"
+                    placeholder={t.quote.form.namePlaceholder}
                   />
                 </div>
               </div>
@@ -77,7 +78,7 @@ const QuoteForm = () => {
               {/* Rubro */}
               <div>
                 <label htmlFor="rubro" className="block text-white text-lg font-semibold mb-3">
-                  Rubro o industria
+                  {t.quote.form.industry}
                 </label>
                 <div className="relative">
                   <Building className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -89,7 +90,7 @@ const QuoteForm = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full bg-gray-800 border border-gray-600 rounded-xl pl-12 pr-4 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
-                    placeholder="Ej: Tecnología, Retail, Salud, etc."
+                    placeholder={t.quote.form.industryPlaceholder}
                   />
                 </div>
               </div>
@@ -97,7 +98,7 @@ const QuoteForm = () => {
               {/* Email */}
               <div>
                 <label htmlFor="email" className="block text-white text-lg font-semibold mb-3">
-                  Email
+                  {t.quote.form.email}
                 </label>
                 <div className="relative">
                   <AtSign className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -109,7 +110,7 @@ const QuoteForm = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full bg-gray-800 border border-gray-600 rounded-xl pl-12 pr-4 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
-                    placeholder="tu@empresa.com"
+                    placeholder={t.quote.form.emailPlaceholder}
                   />
                 </div>
               </div>
@@ -117,7 +118,7 @@ const QuoteForm = () => {
               {/* Método de contacto */}
               <div>
                 <label className="block text-white text-lg font-semibold mb-4">
-                  ¿Cómo prefieres que te contactemos?
+                  {t.quote.form.contactMethod}
                 </label>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {contactMethods.map((method) => {
@@ -162,7 +163,7 @@ const QuoteForm = () => {
                   className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/25 flex items-center justify-center space-x-3"
                 >
                   <Send className="w-5 h-5" />
-                  <span>Enviar cotización</span>
+                  <span>{t.quote.form.submit}</span>
                 </button>
               </div>
             </form>
@@ -172,7 +173,7 @@ const QuoteForm = () => {
         {/* Additional Info */}
         <div className="text-center mt-12">
           <p className="text-gray-400 text-sm">
-            Nos pondremos en contacto contigo en un plazo máximo de 24 horas
+            {t.quote.footerNote}
           </p>
         </div>
       </div>

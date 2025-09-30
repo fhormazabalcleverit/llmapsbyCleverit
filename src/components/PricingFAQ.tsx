@@ -65,7 +65,7 @@ const PricingFAQ = () => {
                 className="w-full px-4 py-4 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-inset"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="text-lg font-semibold text-white pr-4">
+                <span className="text-lg font-semibold text-white">
                   {faq.question}
                 </span>
                 <div className="flex-shrink-0">

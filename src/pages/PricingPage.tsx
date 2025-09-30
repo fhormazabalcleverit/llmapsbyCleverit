@@ -1,12 +1,12 @@
 import React from 'react';
 import Pricing from '../components/Pricing';
-import PricingFAQ from '../components/PricingFAQ';
+import FAQ from '../components/FAQ';
 
 const PricingPage = () => {
   return (
     <div className="min-h-screen bg-backblack">
       <Pricing />
-      <PricingFAQ />
+      <FAQ />
     </div>
   );
 };

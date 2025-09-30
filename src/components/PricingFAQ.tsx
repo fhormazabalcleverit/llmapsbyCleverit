@@ -9,28 +9,28 @@ const PricingFAQ = () => {
 
   const faqs = [
     {
-      question: "¿Puedo cambiar de plan en cualquier momento?",
-      answer: "Sí, puedes actualizar o degradar tu plan en cualquier momento. Los cambios se reflejarán en tu próximo ciclo de facturación. Si actualizas, tendrás acceso inmediato a las nuevas funcionalidades."
+      question: "¿Qué son exactamente las LLM Apps?",
+      answer: "Las LLM Apps son aplicaciones inteligentes que utilizan modelos de lenguaje grandes para procesar, analizar y generar contenido de manera natural. Permiten a las empresas automatizar tareas complejas de comunicación y análisis de datos."
     },
     {
-      question: "¿Qué incluye el soporte técnico?",
-      answer: "El plan Starter incluye soporte por email con respuesta en 24-48 horas. Professional incluye soporte prioritario con respuesta en 4-8 horas. Enterprise incluye soporte 24/7 con consultor dedicado y SLA garantizado."
+      question: "¿Cuáles son las características principales de LLMApps?",
+      answer: "Nuestras LLM Apps incluyen procesamiento de lenguaje natural avanzado, integración con bases de datos existentes, personalización según tu industria, escalabilidad automática y interfaces intuitivas para usuarios no técnicos."
     },
     {
-      question: "¿Hay límites en el almacenamiento de datos?",
-      answer: "Starter incluye hasta 10GB de almacenamiento, Professional hasta 100GB, y Enterprise tiene almacenamiento ilimitado. Todos los planes incluyen backups automáticos y encriptación de datos."
+      question: "¿Mis datos están seguros al usar LLM Apps?",
+      answer: "Absolutamente. Implementamos encriptación de extremo a extremo, cumplimos con estándares internacionales de seguridad como ISO 27001, y tus datos nunca se comparten con terceros. Además, ofrecemos opciones de despliegue on-premise para máxima seguridad."
     },
     {
-      question: "¿Ofrecen período de prueba gratuito?",
-      answer: "Sí, ofrecemos una prueba gratuita de 14 días para todos los planes. No se requiere tarjeta de crédito y tendrás acceso completo a todas las funcionalidades del plan seleccionado."
+      question: "¿Qué diferencia a sus LLM Apps de otras soluciones de IA?",
+      answer: "Nos especializamos en soluciones personalizadas para cada negocio, ofrecemos integración completa con sistemas existentes, soporte en español, y un enfoque consultivo que garantiza que la IA realmente resuelva tus problemas específicos."
     },
     {
-      question: "¿Qué métodos de pago aceptan?",
-      answer: "Aceptamos tarjetas de crédito/débito (Visa, MasterCard, American Express), transferencias bancarias y PayPal. Para planes Enterprise, también ofrecemos facturación anual con descuentos especiales."
+      question: "¿Cuál es el costo de desarrollar una LLM App?",
+      answer: "El costo varía según la complejidad y características específicas. Ofrecemos planes desde $2,000 USD mensuales para soluciones básicas, hasta proyectos enterprise personalizados. Contacta con nosotros para una cotización detallada."
     },
     {
-      question: "¿Puedo integrar mis sistemas existentes?",
-      answer: "Absolutamente. Ofrecemos integraciones con más de 100 plataformas populares como Salesforce, HubSpot, Slack, y bases de datos como MySQL, PostgreSQL. También proporcionamos APIs REST para integraciones personalizadas."
+      question: "¿Qué tipo de soporte ofrecen después del lanzamiento?",
+      answer: "Proporcionamos soporte técnico 24/7, actualizaciones regulares del modelo, monitoreo de rendimiento, capacitación para tu equipo, y mejoras continuas basadas en el uso real de tu aplicación."
     }
   ];
 

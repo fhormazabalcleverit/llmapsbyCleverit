@@ -33,7 +33,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/planes" element={<><Pricing /><PricingFAQ /></>} />
+            <Route path="/planes" element={<PricingPage />} />
             <Route path="/cotizar" element={<QuotePage />} />
           </Routes>
           <Footer />
@@ -42,9 +42,5 @@ function App() {
     </LanguageProvider>
   );
 }
-
-// Import components for the pricing route
-import Pricing from './components/Pricing';
-import PricingFAQ from './components/PricingFAQ';
 
 export default App;

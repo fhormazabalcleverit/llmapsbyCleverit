@@ -213,35 +213,6 @@
       "cta": "Contactar ventas"
     }
   },
-  "pricingFaq": {
-    "badge": "Preguntas Frecuentes",
-    "title": "¿Tienes dudas sobre los planes?",
-    "subtitle": "Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros planes y servicios.",
-    "question1": {
-      "q": "¿Qué son exactamente las LLM Apps?",
-      "a": "Las LLM Apps son aplicaciones inteligentes que utilizan modelos de lenguaje grandes para procesar, analizar y generar contenido de manera natural. Permiten a las empresas automatizar tareas complejas de comunicación y análisis de datos."
-    },
-    "question2": {
-      "q": "¿Cuáles son las características principales de LLMApps?",
-      "a": "Nuestras LLM Apps incluyen procesamiento de lenguaje natural avanzado, integración con bases de datos existentes, personalización según tu industria, escalabilidad automática y interfaces intuitivas para usuarios no técnicos."
-    },
-    "question3": {
-      "q": "¿Mis datos están seguros al usar LLM Apps?",
-      "a": "Absolutamente. Implementamos encriptación de extremo a extremo, cumplimos con estándares internacionales de seguridad como ISO 27001, y tus datos nunca se comparten con terceros. Además, ofrecemos opciones de despliegue on-premise para máxima seguridad."
-    },
-    "question4": {
-      "q": "¿Qué diferencia a sus LLM Apps de otras soluciones de IA?",
-      "a": "Nos especializamos en soluciones personalizadas para cada negocio, ofrecemos integración completa con sistemas existentes, soporte en español, y un enfoque consultivo que garantiza que la IA realmente resuelva tus problemas específicos."
-    },
-    "question5": {
-      "q": "¿Cuál es el costo de desarrollar una LLM App?",
-      "a": "El costo varía según la complejidad y características específicas. Ofrecemos planes desde $2,000 USD mensuales para soluciones básicas, hasta proyectos enterprise personalizados. Contacta con nosotros para una cotización detallada."
-    },
-    "question6": {
-      "q": "¿Qué tipo de soporte ofrecen después del lanzamiento?",
-      "a": "Proporcionamos soporte técnico 24/7, actualizaciones regulares del modelo, monitoreo de rendimiento, capacitación para tu equipo, y mejoras continuas basadas en el uso real de tu aplicación."
-    }
-  },
   "quote": {
     "badge": "Cotización",
     "title": "Cotiza con nosotros",

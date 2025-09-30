@@ -128,6 +128,8 @@ const FAQ = () => {
               <button
                 className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none "
                 onClick={() => toggleFAQ(index)}
+                onMouseEnter={() => setOpenIndex(index)}
+                onMouseLeave={() => setOpenIndex(null)}
               >
                 <span className="text-lg font-semibold text-white pr-4">
                   {faq.question}

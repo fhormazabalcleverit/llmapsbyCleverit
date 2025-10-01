@@ -25,19 +25,8 @@ const Process = () => {
       emogi: "🔄",
       title: t.process.step3.title,
       description: t.process.step3.description
-    },
-    {
-      number: "04",
-      emogi: "⚡",
-      title: t.process.step4.title,
-      description: t.process.step4.description
-    },
-    {
-      number: "05",
-      emogi: "🧠",
-      title: t.process.step5.title,
-      description: t.process.step5.description
     }
+
   ];
 
   return (

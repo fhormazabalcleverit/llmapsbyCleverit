@@ -93,7 +93,6 @@ const TeamPage = () => {
       </div>
 
 
-        </div>
       </div>
 
     </div>

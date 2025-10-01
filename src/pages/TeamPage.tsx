@@ -141,10 +141,9 @@ const TeamPage = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div className="grid grid-cols-1 lg:grid-col-2 gap-12 lg:gap-16 items-center">
           
-
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
               {t.team.boxB.title}

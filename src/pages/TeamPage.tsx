@@ -14,6 +14,18 @@ const TeamPage = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center mb-20">
           <div className="space-y-8 col-span-3">
+
+
+             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-8 leading-tight animate-slide-up max-w-5xl mx-auto">
+              {t.team.title}{' '}
+              <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+                {t.team.titleHighlight}
+              </span>
+              {' '}{t.team.titleEnd}
+            </h1>
+
+
+             {/*
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               {t.team.title}
             </h1>
@@ -21,7 +33,7 @@ const TeamPage = () => {
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               {t.team.description}
             </p>
-
+*/}
             <button className="px-8 py-3 border-2 border-gray-300 text-gray-300 hover:border-white hover:text-white rounded-lg transition-all duration-200 font-medium">
               {t.team.cta}
             </button>

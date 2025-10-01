@@ -33,13 +33,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200">
-            <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600  rounded-lg flex items-center justify-center">
-              <div className="w-4 h-4 bg-white rounded-sm"></div>
-            </div>
-            <div className="flex items-baseline space-x-1">
-              <span className="text-white text-xl font-semibold">LLMApp</span>
-              <span className="text-gray-400 text-sm font-normal">by CleverIT</span>
-            </div>
+            <img src="/logotipo.svg" alt="LLMApp by CleverIT" className="h-8" />
           </Link>
 
           {/* Desktop Navigation */}

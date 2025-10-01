@@ -11,14 +11,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Logo and Description */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <div className="w-4 h-4 bg-white rounded-sm"></div>
-              </div>
-              <div className="flex items-baseline space-x-1">
-                <span className="text-white text-xl font-semibold">LLMApp</span>
-                <span className="text-gray-400 text-sm font-normal">by CleverIT</span>
-              </div>
+            <div className="flex items-center">
+              <img src="/logotipo.svg" alt="LLMApp by CleverIT" className="h-8" />
             </div>
             <p className="text-gray-300 leading-relaxed max-w-sm">
               Transformamos negocios con soluciones de IA personalizadas que impulsan la innovación y el crecimiento.

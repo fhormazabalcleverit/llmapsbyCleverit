@@ -7,9 +7,10 @@ const TeamPage = () => {
 
   return (
     <div className="min-h-screen bg-backblack">
-           {/* Background SVG */}
-      <div className="absolute inset-0 bg-no-repeat bg-center bg-[length:150%_auto] md:bg-cover"
-        style={{ backgroundImage: 'url(/background01.svg)' }}></div>
+      
+      {/* Background SVG */}
+    <div className="absolute inset-0 bg-no-repeat bg-center bg-[length:150%_auto] md:bg-cover"
+        style={{ backgroundImage: 'url(/weare.svg)' }}></div>
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
          {/* Titulo */}

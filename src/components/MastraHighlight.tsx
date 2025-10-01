@@ -21,9 +21,9 @@ const MastraHighlight = () => {
 
 
         <div ref={sectionRef} className={`fade-in-up ${sectionVisible ? 'animate' : ''}`}>
-          <div className="relative max-w-7xl mx-auto bg-gradient-to-r from-blue-500/20 via-purple-600/10 to-pink-500/20 border border-blue-500/50 rounded-3xl p-8 md:p-12 backdrop-blur-sm overflow-hidden">
+          <div className="relative bg-gradient-to-r from-blue-500/20 via-purple-600/10 to-pink-500/20 border border-blue-500/50 rounded-3xl p-8 md:p-12 backdrop-blur-sm overflow-hidden">
             {/* Background Pattern */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_10%,_rgba(59,130,246,0.15)_0%,_transparent_0%)] pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_10%,_rgba(59,130,246,0.15)_0%,_transparent_0%)] pointer-events-none max-w-7xl mx-auto"></div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_10%,_rgba(147,51,234,0.15)_0%,_transparent_0%)] pointer-events-none"></div>
             
             <div className="relative z-10 text-center">

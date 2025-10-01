@@ -69,13 +69,12 @@ const Process = () => {
             <div
               key={index}
               className="group relative bg-black/10 backdrop-blur-md border-0 border-backblack hover:border-pink-500/50 rounded-2xl p-6 lg:p-6 transition-all duration-500 ease-in-out cursor-pointer flex-1 lg:hover:flex-[2] min-h-[200px] lg:min-h-[200px] flex flex-col hover:bg-backblack/80 bg-gradient-to-r from-blue-500/10 via-sky-600/3 to-purple-500/10">
-              <div className="mb-0">
-                 {/*
+           {/* <div className="mb-0">
                 <span className="text-gray-500 text-sm font-medium">
                   {step.number}
                 </span>
-                */}
               </div>
+                 */}
               <h3 className="text-2lg lg:text-3xl font-semibold text-white mb-1 lg:mb-2 leading-tight flex-shrink-0">
                 {step.emogi}
               </h3>  

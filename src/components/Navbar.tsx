@@ -59,7 +59,7 @@ const Navbar = () => {
               className="flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
             >
               <Globe className="w-5 h-5" />
-              <span>{language === 'es' ? 'ES' : 'EN'}</span>
+              <span>{language === 'es' ? 'EN' : 'ES'}</span>
             </button>
           </div>
 
@@ -97,7 +97,7 @@ const Navbar = () => {
                   className="flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
                 >
                   <Globe className="w-5 h-5" />
-                  <span>{language === 'es' ? 'ES' : 'EN'}</span>
+                  <span>{language === 'es' ? 'EN' : 'ES'}</span>
                 </button>
               </div>
             </div>

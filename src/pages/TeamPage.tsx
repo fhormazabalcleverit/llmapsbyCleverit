@@ -28,8 +28,8 @@ const TeamPage = () => {
 
 
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-center">
+          <div className="space-y-6 col-span-2">
             <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-gray-600/50 transition-all duration-300">
               <p className="text-gray-300 text-lg leading-relaxed italic mb-6">
                 "{t.team.quote}"

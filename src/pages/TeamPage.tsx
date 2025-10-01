@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import Footer from '../components/Footer';
 
 const TeamPage = () => {
   const { t } = useLanguage();
@@ -49,7 +48,6 @@ const TeamPage = () => {
         </div>
       </div>
 
-      <Footer />
     </div>
   );
 };

@@ -1,9 +1,15 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 
 const TeamPage = () => {
   const { t } = useLanguage();
+  const achievementsTitle = useScrollAnimation();
+  const achievement1 = useScrollAnimation();
+  const achievement2 = useScrollAnimation();
+  const achievement3 = useScrollAnimation();
+  const achievement4 = useScrollAnimation();
 
   return (
     <div className="min-h-screen bg-backblack relative overflow-hidden">
@@ -172,15 +178,20 @@ const TeamPage = () => {
 
       {/* Achievements Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-          Logros y diferenciadores
-        </h2>
-        <p className="text-xl text-gray-300 text-center mb-16">
-          ¿Por qué elegir a CleverIT como partner tecnológico?
-        </p>
+        <div ref={achievementsTitle.ref} className={`fade-in-up ${achievementsTitle.isVisible ? 'animate' : ''}`}>
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+            Logros y diferenciadores
+          </h2>
+          <p className="text-xl text-gray-300 text-center mb-16">
+            ¿Por qué elegir a CleverIT como partner tecnológico?
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+          <div
+            ref={achievement1.ref}
+            className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up ${achievement1.isVisible ? 'animate' : ''}`}
+          >
             <h3 className="text-xl font-bold text-white mb-4">
               Certificaciones y especializaciones avanzadas
             </h3>
@@ -189,7 +200,10 @@ const TeamPage = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+          <div
+            ref={achievement2.ref}
+            className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay ${achievement2.isVisible ? 'animate' : ''}`}
+          >
             <h3 className="text-xl font-bold text-white mb-4">
               Casos de éxito comprobados
             </h3>
@@ -198,7 +212,10 @@ const TeamPage = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+          <div
+            ref={achievement3.ref}
+            className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay-2 ${achievement3.isVisible ? 'animate' : ''}`}
+          >
             <h3 className="text-xl font-bold text-white mb-4">
               Innovación propia
             </h3>
@@ -207,7 +224,10 @@ const TeamPage = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+          <div
+            ref={achievement4.ref}
+            className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay-3 ${achievement4.isVisible ? 'animate' : ''}`}
+          >
             <h3 className="text-xl font-bold text-white mb-4">
               Metodología comprobada
             </h3>

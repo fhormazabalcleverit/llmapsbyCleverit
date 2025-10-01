@@ -34,9 +34,9 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/equipo" element={<TeamPage />} />
-            <Route path="/planes" element={<PricingPage />} />
-            <Route path="/cotizar" element={<QuotePage />} />
+            <Route path="/team" element={<TeamPage />} />
+            <Route path="/plans" element={<PricingPage />} />
+            <Route path="/quote" element={<QuotePage />} />
           </Routes>
           <Footer />
         </div>

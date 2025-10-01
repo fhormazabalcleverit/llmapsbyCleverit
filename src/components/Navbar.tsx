@@ -44,13 +44,13 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
-            <a href="/equipo" className="text-gray-300 hover:text-white transition-colors duration-200">
+            <a href="/team" className="text-gray-300 hover:text-white transition-colors duration-200">
               {t.navbar.team}
             </a>
-            <a href="/planes" className="text-gray-300 hover:text-white transition-colors duration-200">
+            <a href="/plans" className="text-gray-300 hover:text-white transition-colors duration-200">
               {t.navbar.plans}
             </a>
-            <a href="/cotizar" className="text-gray-300 hover:text-white transition-colors duration-200">
+            <a href="/quote" className="text-gray-300 hover:text-white transition-colors duration-200">
               {t.navbar.contact}
             </a>
           </div>
@@ -85,13 +85,13 @@ const Navbar = () => {
               : 'bg-backblack/95 backdrop-blur-sm border-gray-800'
           }`}>
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link to="/equipo" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200" onClick={() => setIsOpen(false)}>
+              <Link to="/team" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200" onClick={() => setIsOpen(false)}>
                 {t.navbar.team}
               </Link>
-              <Link to="/planes" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200" onClick={() => setIsOpen(false)}>
+              <Link to="/plans" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200" onClick={() => setIsOpen(false)}>
                 {t.navbar.plans}
               </Link>
-              <Link to="/cotizar" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200" onClick={() => setIsOpen(false)}>
+              <Link to="/quote" className="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200" onClick={() => setIsOpen(false)}>
                 {t.navbar.contact}
               </Link>
               <div className="flex items-center justify-between px-3 py-2 border-t border-gray-700 mt-4 pt-4">

@@ -6,7 +6,7 @@ const TeamPage = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-backblack -top-16       flex items-center relative  
+    <div className="min-h-screen bg-backblack -top-16       relative  
 ">
 
       

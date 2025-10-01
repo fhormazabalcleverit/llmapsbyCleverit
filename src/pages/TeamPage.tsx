@@ -10,7 +10,7 @@ const TeamPage = () => {
 
       
       {/* Background SVG */}
-    <div className="absolute inset-0 bg-no-repeat bg-center bg-[length:150%_auto] md:bg-cover"
+    <div className="absolute overflow-hidden inset-0 bg-no-repeat bg-center bg-[length:150%_auto] md:bg-cover"
         style={{ backgroundImage: 'url(/weare.svg)' }}></div>
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">

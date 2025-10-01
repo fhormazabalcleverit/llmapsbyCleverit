@@ -56,7 +56,7 @@ const TeamPage = () => {
             </button>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-gray-600/50 transition-all duration-300">
               <p className="text-gray-300 text-lg leading-relaxed italic mb-6">
                 "{t.team.quote}"

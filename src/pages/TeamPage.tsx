@@ -75,11 +75,11 @@ const TeamPage = () => {
 
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-              {t.team.about.title}
+              {t.team.boxB.title}
             </h2>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              {t.team.about.description}
+              {t.team.boxB.description}
             </p>
           </div>
           <div className="w-full h-96 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl flex items-center justify-center">

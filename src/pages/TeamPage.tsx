@@ -6,7 +6,8 @@ const TeamPage = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-backblack">
+    <div className="min-h-screen bg-backblack -top-16">
+
       
       {/* Background SVG */}
     <div className="absolute inset-0 bg-no-repeat bg-center bg-[length:150%_auto] md:bg-cover"

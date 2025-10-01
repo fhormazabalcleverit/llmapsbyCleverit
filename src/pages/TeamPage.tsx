@@ -27,10 +27,11 @@ const TeamPage = () => {
               </span>
             </h1>
 
-        
+            {/*
             <button className="px-8 py-3 border-2 border-gray-300 text-gray-300 hover:border-white hover:text-white rounded-lg transition-all duration-200 font-medium">
               {t.team.cta}
             </button>
+            */}
           </div>
         </div>
 

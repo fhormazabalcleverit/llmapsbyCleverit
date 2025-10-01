@@ -45,8 +45,8 @@ const TeamPage = () => {
               </p>
 
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center flex-shrink-0 animate-slide-up">
-                  <span className="text-white text-xl font-bold">CG</span>
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center flex-shrink-0 animate-slide-up overflow-hidden">
+                  <img src="/carlosgallador.png" alt="Carlos Gallador" className="w-full h-full object-cover" />
                 </div>
 
                 <div>

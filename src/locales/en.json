@@ -1,8 +1,18 @@
 {
   "navbar": {
-    "team": "Team",
+    "team": "Meet the team",
     "plans": "Plans",
     "contact": "Contact Us"
+  },
+  "team": {
+    "title": "Technology with purpose, people with vision",
+    "description": "At CleverIT we believe that behind every successful technological solution there is a passionate, creative and committed team.",
+    "cta": "Call to action",
+    "quote": "Technology evolves every day, but what really makes a difference are the people who drive it. Our purpose is to transform innovation into tangible results",
+    "member": {
+      "name": "Carlos Gallardo",
+      "position": "Chief Product Officer - Product Development and Innovation - Cleverit Group"
+    }
   },
   "hero": {
     "badge": "Advanced AI Solutions",

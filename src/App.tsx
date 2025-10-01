@@ -12,6 +12,7 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import PricingPage from './pages/PricingPage';
 import QuotePage from './pages/QuotePage';
+import TeamPage from './pages/TeamPage';
 
 const HomePage = () => (
   <>
@@ -33,6 +34,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/equipo" element={<TeamPage />} />
             <Route path="/planes" element={<PricingPage />} />
             <Route path="/cotizar" element={<QuotePage />} />
           </Routes>

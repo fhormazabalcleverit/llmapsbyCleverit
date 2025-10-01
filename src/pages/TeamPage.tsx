@@ -29,7 +29,7 @@ const TeamPage = () => {
 
         
         <div className="grid grid-cols-1 lg:grid-cols-9 gap-12 lg:gap-16 items-center">
-          <div className="space-y-6 col-span-3">
+          <div className="space-y-6 col-span-7">
             <div className="">
               <p className="text-gray-300 text-lg leading-relaxed italic mb-6">
                 "{t.team.quote}"

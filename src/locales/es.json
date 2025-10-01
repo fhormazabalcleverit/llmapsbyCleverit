@@ -5,7 +5,11 @@
     "contact": "Contáctanos"
   },
   "team": {
-    "title": "Tecnología con propósito, personas con visión",
+    "titleA": "Tecnología con",
+    "titleHighlightA":"propósito";
+    "titleB": ", personas con ",
+    "titleHighlightB":"visión";
+    
     "description": "En CleverIT creemos que detrás de cada solución tecnológica exitosa hay un equipo apasionado, creativo y comprometido.",
     "cta": "Call to action",
     "quote": "La tecnología evoluciona cada día, pero lo que realmente marca la diferencia son las personas que la impulsan. Nuestro propósito es transformar la innovación en resultados tangibles",

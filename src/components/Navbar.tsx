@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
             <a href="/planes" className="text-gray-300 hover:text-white transition-colors duration-200">
               {t.navbar.plans}
             </a>

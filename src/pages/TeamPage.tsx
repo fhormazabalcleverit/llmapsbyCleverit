@@ -8,9 +8,10 @@ const TeamPage = () => {
   return (
     <div className="min-h-screen bg-backblack">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="space-y-8">
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center mb-20">
+          <div className="space-y-8 col-span-3">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               {t.team.title}
             </h1>
@@ -23,9 +24,13 @@ const TeamPage = () => {
               {t.team.cta}
             </button>
           </div>
+        </div>
 
-          <div className="space-y-8">
-            <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-gray-600/50 transition-all duration-300">
+
+        
+        <div className="grid grid-cols-1 lg:grid-cols-9 gap-12 lg:gap-16 items-center">
+          <div className="space-y-6 col-span-6">
+            <div className="">
               <p className="text-gray-300 text-lg leading-relaxed italic mb-6">
                 "{t.team.quote}"
               </p>
@@ -48,6 +53,115 @@ const TeamPage = () => {
           </div>
         </div>
       </div>
+
+
+
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-16">
+          {t.team.skills.title}
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300"
+            style={{
+              backgroundImage: 'url(/card.svg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <p className="text-white text-center text-lg px-6">
+              {t.team.skills.skill1}
+            </p>
+          </div>
+
+          <div
+            className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300"
+            style={{
+              backgroundImage: 'url(/card.svg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <p className="text-white text-center text-lg px-6">
+              {t.team.skills.skill2}
+            </p>
+          </div>
+
+          <div
+            className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300"
+            style={{
+              backgroundImage: 'url(/card.svg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <p className="text-white text-center text-lg px-6">
+              {t.team.skills.skill3}
+            </p>
+          </div>
+
+          <div
+            className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300"
+            style={{
+              backgroundImage: 'url(/card.svg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <p className="text-white text-center text-lg px-6">
+              {t.team.skills.skill4}
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="w-full h-96 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl flex items-center justify-center">
+            <div className="text-gray-500 text-lg">Image placeholder</div>
+          </div>
+
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+              {t.team.about.title}
+            </h2>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              {t.team.about.description}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+              {t.team.boxB.title}
+            </h2>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              {t.team.boxB.description}
+            </p>
+          </div>
+          <div className="w-full h-96 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl flex items-center justify-center">
+            <div className="text-gray-500 text-lg">Image placeholder</div>
+          </div>
+          
+        </div>
+      </div>
+
+    
 
     </div>
   );

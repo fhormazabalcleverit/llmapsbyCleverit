@@ -7,8 +7,9 @@ const TeamPage = () => {
 
   return (
     <div className="min-h-screen bg-backblack">
-      {/*
+     
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+         {/* Titulo */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center mb-20">
           <div className="space-y-8 col-span-3">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
@@ -22,9 +23,9 @@ const TeamPage = () => {
             </button>
           </div>
         </div>
-*/}
 
-    
+
+        {/* pensamiento */}
         <div className="grid grid-cols-1 lg:grid-cols-9 gap-12 lg:gap-16 items-center">
           <div className="space-y-6 col-span-6">
             <div className="">
@@ -53,7 +54,7 @@ const TeamPage = () => {
 
 
 
-      
+       {/* habilidades equipo */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-16">
           {t.team.skills.title}

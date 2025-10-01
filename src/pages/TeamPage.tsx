@@ -154,7 +154,35 @@ const TeamPage = () => {
         </div>
       </div>
 
-    
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div
+          className="relative bg-gradient-to-br from-gray-900/80 to-gray-800/50 border-2 border-pink-500/50 rounded-3xl p-12 md:p-16 text-center overflow-hidden"
+          style={{
+            backgroundImage: 'url(/card.svg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-purple-600/10 pointer-events-none"></div>
+
+          <div className="relative z-10 max-w-3xl mx-auto space-y-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              {t.team.ctaCard.title}
+            </h2>
+
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              {t.team.ctaCard.description}
+            </p>
+
+            <div className="pt-4">
+              <button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-pink-500/50">
+                {t.team.ctaCard.button}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   );

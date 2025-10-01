@@ -52,38 +52,65 @@ const Benefits = () => {
         </div>
 
         {/* Benefits Grid */}
-        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-12">
-          {benefits.map((benefit, index) => {
-            const IconComponent = benefit.icon;
-            const delayClasses = [
-              'fade-in-up',
-              'fade-in-up-delay',
-              'fade-in-up-delay-2',
-              'fade-in-up-delay-3',
-              'fade-in-up-delay-4'
-            ];
-            return (
-              <div
-                key={index}
-                className={`group text-center duration-300  ${delayClasses[index]} ${gridVisible ? 'animate' : ''}`}
-              >
-                {/* Icon */}
-                <div className="w-16 h-16 transition-all bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600  duration-300">
-                  <IconComponent className="w-8 h-8 text-gray-300 group-hover:text-white duration-300" />
+        <div ref={gridRef} className="flex flex-col gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {benefits.slice(0, 3).map((benefit, index) => {
+              const IconComponent = benefit.icon;
+              const delayClasses = [
+                'fade-in-up',
+                'fade-in-up-delay',
+                'fade-in-up-delay-2'
+              ];
+              return (
+                <div
+                  key={index}
+                  className={`group text-center duration-300  ${delayClasses[index]} ${gridVisible ? 'animate' : ''}`}
+                >
+                  <div className="w-16 h-16 transition-all bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600  duration-300">
+                    <IconComponent className="w-8 h-8 text-gray-300 group-hover:text-white duration-300" />
+                  </div>
+
+                  <h3 className="text-xl font-bold text-white mb-4 leading-tight group-hover:text-pink-500">
+                    {benefit.title}
+                  </h3>
+
+                  <p className="text-gray-400 leading-relaxed">
+                    {benefit.description}
+                  </p>
                 </div>
-                
-                {/* Title */}
-                <h3 className="text-xl font-bold text-white mb-4 leading-tight group-hover:text-pink-500">
-                  {benefit.title}
-                </h3>
-                
-                {/* Description */}
-                <p className="text-gray-400 leading-relaxed">
-                  {benefit.description}
-                </p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
+          {benefits.length > 3 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+              {benefits.slice(3).map((benefit, index) => {
+                const IconComponent = benefit.icon;
+                const delayClasses = [
+                  'fade-in-up-delay-3',
+                  'fade-in-up-delay-4'
+                ];
+                return (
+                  <div
+                    key={index + 3}
+                    className={`group text-center duration-300  ${delayClasses[index]} ${gridVisible ? 'animate' : ''}`}
+                  >
+                    <div className="w-16 h-16 transition-all bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600  duration-300">
+                      <IconComponent className="w-8 h-8 text-gray-300 group-hover:text-white duration-300" />
+                    </div>
+
+                    <h3 className="text-xl font-bold text-white mb-4 leading-tight group-hover:text-pink-500">
+                      {benefit.title}
+                    </h3>
+
+                    <p className="text-gray-400 leading-relaxed">
+                      {benefit.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </section>

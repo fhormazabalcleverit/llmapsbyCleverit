@@ -44,7 +44,7 @@ const TeamPage = () => {
               </p>
 
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center flex-shrink-0 animate-slide-up">
                   <span className="text-white text-xl font-bold">CG</span>
                 </div>
 
@@ -70,7 +70,7 @@ const TeamPage = () => {
           {t.team.skills.title}
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 animate-slide-up">
           <div
             className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300"
             style={{
@@ -131,7 +131,7 @@ const TeamPage = () => {
 
 
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10 animate-slide-up">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="w-full h-96 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl flex items-center justify-center overflow-hidden">
             <img src="/SomosCleverIT.png" alt="Somos CleverIT" className="w-full h-full object-cover" />

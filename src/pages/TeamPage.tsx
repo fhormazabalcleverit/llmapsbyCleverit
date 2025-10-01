@@ -17,13 +17,18 @@ const TeamPage = () => {
 
 
              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-8 leading-tight animate-slide-up max-w-5xl mx-auto">
-              {t.team.title}{' '}
+              {t.team.titleA}{' '}
               <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
-                {t.team.titleHighlight}
+                {t.team.titleHighlightA}
               </span>
-              {' '}{t.team.titleEnd}
+              {' '}{t.team.titleB}
+                  <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+                {t.team.titleHighlightB}
+              </span>
             </h1>
 
+
+            
 
              {/*
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">

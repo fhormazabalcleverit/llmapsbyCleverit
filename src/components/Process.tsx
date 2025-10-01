@@ -81,7 +81,7 @@ const Process = () => {
               <h3 className="text-lg lg:text-lg font-semibold text-white mb-1 lg:mb-2 leading-tight flex-shrink-0">
                 {step.title}
               </h3>
-              <div className="flex-2 flex items-end">
+              <div className="flex-1 flex items-end">
                 <p className="text-gray-400 leading-relaxed text-bold text-md opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 delay-200 pt-4">
                   {step.description}
                 </p>

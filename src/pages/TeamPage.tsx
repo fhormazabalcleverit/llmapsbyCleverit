@@ -24,26 +24,7 @@ const TeamPage = () => {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-gray-600/50 transition-all duration-300">
-              <p className="text-gray-300 text-lg leading-relaxed italic mb-6">
-                "{t.team.quote}"
-              </p>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-xl font-bold">CG</span>
-                </div>
-
-                <div>
-                  <h3 className="text-white font-semibold text-lg">
-                    {t.team.member.name}
-                  </h3>
-                  <p className="text-gray-400 text-sm leading-snug">
-                    {t.team.member.position}
-                  </p>
-                </div>
-              </div>
-            </div>
+       
           </div>
         </div>
       </div>

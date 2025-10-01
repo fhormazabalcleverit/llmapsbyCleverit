@@ -30,7 +30,7 @@ const TeamPage = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-center">
           <div className="space-y-6 col-span-2">
-            <div className="hover:border-gray-600/50 transition-all duration-300">
+            <div className="">
               <p className="text-gray-300 text-lg leading-relaxed italic mb-6">
                 "{t.team.quote}"
               </p>

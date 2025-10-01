@@ -170,7 +170,53 @@ const TeamPage = () => {
         </div>
       </div>
 
-    
+      {/* Achievements Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+          Logros y diferenciadores
+        </h2>
+        <p className="text-xl text-gray-300 text-center mb-16">
+          ¿Por qué elegir a CleverIT como partner tecnológico?
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+            <h3 className="text-xl font-bold text-white mb-4">
+              Certificaciones y especializaciones avanzadas
+            </h3>
+            <p className="text-gray-400 leading-relaxed">
+              Partner de Microsoft, especialistas en GitHub, Cloud y DevOps.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+            <h3 className="text-xl font-bold text-white mb-4">
+              Casos de éxito comprobados
+            </h3>
+            <p className="text-gray-400 leading-relaxed">
+              Implementación de soluciones escalables en empresas líderes de LATAM.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+            <h3 className="text-xl font-bold text-white mb-4">
+              Innovación propia
+            </h3>
+            <p className="text-gray-400 leading-relaxed">
+              Creación de productos como Groowcity, Pulzen y Nxt, que resuelven problemas reales en gestión de talento, engagement y productividad.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300">
+            <h3 className="text-xl font-bold text-white mb-4">
+              Metodología comprobada
+            </h3>
+            <p className="text-gray-400 leading-relaxed">
+              Combinamos design thinking, data-driven design y metodologías ágiles para asegurar resultados medibles.
+            </p>
+          </div>
+        </div>
+      </div>
 
     </div>
   );

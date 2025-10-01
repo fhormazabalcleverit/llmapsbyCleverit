@@ -143,7 +143,7 @@ const TeamPage = () => {
               {t.team.about.title}
             </h2>
 
-            <p className="text-lg text-gray-500 leading-relaxed">
+            <p className="text-lg text-gray-400 leading-relaxed">
               {t.team.about.description}
             </p>
           </div>
@@ -159,7 +159,7 @@ const TeamPage = () => {
               {t.team.boxB.title}
             </h2>
 
-            <p className="text-lg text-gray-500 leading-relaxed">
+            <p className="text-lg text-gray-400 leading-relaxed">
               {t.team.boxB.description}
             </p>
           </div>

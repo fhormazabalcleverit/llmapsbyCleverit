@@ -92,7 +92,7 @@ const Process = () => {
               {steps.slice(3).map((step, index) => (
                 <div
                   key={index + 3}
-                  className="group relative bg-black/10 backdrop-blur-md border-0 border-backblack hover:border-pink-500/50 rounded-2xl p-6 lg:p-6 transition-all duration-500 ease-in-out cursor-pointer flex-1 lg:hover:flex-[1] min-h-[100px] lg:min-h-[100px] flex flex-col hover:bg-backblack/80 bg-gradient-to-r from-blue-500/10 via-sky-600/3 to-purple-500/10"
+                  className="group relative bg-trasnparent backdrop-blur-md border-0 border-backblack hover:border-pink-500/50 rounded-2xl p-6 lg:p-6 transition-all duration-500 ease-in-out cursor-pointer flex-1 lg:hover:flex-[1] min-h-[100px] lg:min-h-[100px] flex flex-col hover:bg-backblack/80 bg-gradient-to-r from-blue-500/10 via-sky-600/3 to-purple-500/10"
                 >
                   <h3 className="text-2lg lg:text-3xl font-semibold text-white mb-1 lg:mb-2 leading-tight flex-shrink-0">
                     {step.emogi}

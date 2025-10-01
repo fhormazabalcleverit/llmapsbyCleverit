@@ -187,53 +187,57 @@ const TeamPage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div
-            ref={achievement1.ref}
-            className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up ${achievement1.isVisible ? 'animate' : ''}`}
-          >
-            <h3 className="text-xl font-bold text-white mb-4">
-              Certificaciones y especializaciones avanzadas
-            </h3>
-            <p className="text-gray-400 leading-relaxed">
-              Partner de Microsoft, especialistas en GitHub, Cloud y DevOps.
-            </p>
+        <div className="flex flex-col gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              ref={achievement1.ref}
+              className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up ${achievement1.isVisible ? 'animate' : ''}`}
+            >
+              <h3 className="text-xl font-bold text-white mb-4">
+                Certificaciones y especializaciones avanzadas
+              </h3>
+              <p className="text-gray-400 leading-relaxed">
+                Partner de Microsoft, especialistas en GitHub, Cloud y DevOps.
+              </p>
+            </div>
+
+            <div
+              ref={achievement2.ref}
+              className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay ${achievement2.isVisible ? 'animate' : ''}`}
+            >
+              <h3 className="text-xl font-bold text-white mb-4">
+                Casos de éxito comprobados
+              </h3>
+              <p className="text-gray-400 leading-relaxed">
+                Implementación de soluciones escalables en empresas líderes de LATAM.
+              </p>
+            </div>
+
+            <div
+              ref={achievement3.ref}
+              className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay-2 ${achievement3.isVisible ? 'animate' : ''}`}
+            >
+              <h3 className="text-xl font-bold text-white mb-4">
+                Innovación propia
+              </h3>
+              <p className="text-gray-400 leading-relaxed">
+                Creación de productos como Groowcity, Pulzen y Nxt, que resuelven problemas reales en gestión de talento, engagement y productividad.
+              </p>
+            </div>
           </div>
 
-          <div
-            ref={achievement2.ref}
-            className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay ${achievement2.isVisible ? 'animate' : ''}`}
-          >
-            <h3 className="text-xl font-bold text-white mb-4">
-              Casos de éxito comprobados
-            </h3>
-            <p className="text-gray-400 leading-relaxed">
-              Implementación de soluciones escalables en empresas líderes de LATAM.
-            </p>
-          </div>
-
-          <div
-            ref={achievement3.ref}
-            className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay-2 ${achievement3.isVisible ? 'animate' : ''}`}
-          >
-            <h3 className="text-xl font-bold text-white mb-4">
-              Innovación propia
-            </h3>
-            <p className="text-gray-400 leading-relaxed">
-              Creación de productos como Groowcity, Pulzen y Nxt, que resuelven problemas reales en gestión de talento, engagement y productividad.
-            </p>
-          </div>
-
-          <div
-            ref={achievement4.ref}
-            className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay-3 ${achievement4.isVisible ? 'animate' : ''}`}
-          >
-            <h3 className="text-xl font-bold text-white mb-4">
-              Metodología comprobada
-            </h3>
-            <p className="text-gray-400 leading-relaxed">
-              Combinamos design thinking, data-driven design y metodologías ágiles para asegurar resultados medibles.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              ref={achievement4.ref}
+              className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay-3 ${achievement4.isVisible ? 'animate' : ''}`}
+            >
+              <h3 className="text-xl font-bold text-white mb-4">
+                Metodología comprobada
+              </h3>
+              <p className="text-gray-400 leading-relaxed">
+                Combinamos design thinking, data-driven design y metodologías ágiles para asegurar resultados medibles.
+              </p>
+            </div>
           </div>
         </div>
       </div>

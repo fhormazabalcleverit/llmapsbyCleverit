@@ -27,18 +27,7 @@ const TeamPage = () => {
               </span>
             </h1>
 
-
-            
-
-             {/*
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              {t.team.title}
-            </h1>
-
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              {t.team.description}
-            </p>
-*/}
+        
             <button className="px-8 py-3 border-2 border-gray-300 text-gray-300 hover:border-white hover:text-white rounded-lg transition-all duration-200 font-medium">
               {t.team.cta}
             </button>
@@ -50,7 +39,7 @@ const TeamPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-9 gap-12 lg:gap-16 items-center">
           <div className="space-y-6 col-span-6">
             <div className="">
-              <p className="text-gray-300 text-lg leading-relaxed italic mb-6">
+              <p className="text-gray-300 text-lg leading-relaxed italic mb-6 animate-slide-up">
                 "{t.team.quote}"
               </p>
 
@@ -60,10 +49,10 @@ const TeamPage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-white font-semibold text-lg">
+                  <h3 className="text-white font-semibold text-lg animate-slide-up">
                     {t.team.member.name}
                   </h3>
-                  <p className="text-gray-400 text-sm leading-snug">
+                  <p className="text-gray-400 text-sm leading-snug animate-slide-up">
                     {t.team.member.position}
                   </p>
                 </div>

@@ -54,6 +54,40 @@ const TeamPage = () => {
         </div>
       </div>
 
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-16">
+          {t.team.skills.title}
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300">
+            <p className="text-white text-center text-lg px-6">
+              {t.team.skills.skill1}
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300">
+            <p className="text-white text-center text-lg px-6">
+              {t.team.skills.skill2}
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300">
+            <p className="text-white text-center text-lg px-6">
+              {t.team.skills.skill3}
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300">
+            <p className="text-white text-center text-lg px-6">
+              {t.team.skills.skill4}
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="w-full h-96 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl flex items-center justify-center">

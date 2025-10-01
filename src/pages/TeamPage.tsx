@@ -63,25 +63,57 @@ const TeamPage = () => {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300">
+          <div
+            className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300"
+            style={{
+              backgroundImage: 'url(/card.svg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
             <p className="text-white text-center text-lg px-6">
               {t.team.skills.skill1}
             </p>
           </div>
 
-          <div className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300">
+          <div
+            className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300"
+            style={{
+              backgroundImage: 'url(/card.svg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
             <p className="text-white text-center text-lg px-6">
               {t.team.skills.skill2}
             </p>
           </div>
 
-          <div className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300">
+          <div
+            className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300"
+            style={{
+              backgroundImage: 'url(/card.svg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
             <p className="text-white text-center text-lg px-6">
               {t.team.skills.skill3}
             </p>
           </div>
 
-          <div className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300">
+          <div
+            className="flex items-center justify-center aspect-square border-2 border-gray-700 rounded-full hover:border-gray-500 transition-all duration-300"
+            style={{
+              backgroundImage: 'url(/card.svg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
             <p className="text-white text-center text-lg px-6">
               {t.team.skills.skill4}
             </p>

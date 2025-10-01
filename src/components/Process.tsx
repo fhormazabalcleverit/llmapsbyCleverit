@@ -69,7 +69,7 @@ const Process = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="group relative bg-black/10 backdrop-blur-md border-0 border-backblack hover:border-pink-500/50 rounded-2xl p-6 lg:p-6 transition-all duration-500 ease-in-out cursor-pointer flex-1 lg:hover:flex-[2] min-h-[100px] lg:min-h-[100px] flex flex-col hover:bg-backblack/80 bg-gradient-to-r from-blue-500/10 via-sky-600/3 to-purple-500/10">
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-12">
            {/* <div className="mb-0">
                 <span className="text-gray-500 text-sm font-medium">
                   {step.number}

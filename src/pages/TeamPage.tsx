@@ -6,10 +6,12 @@ const TeamPage = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-backblack">
+    <div className="min-h-screen bg-backblack relative overflow-hidden">
+      {/* Background SVG */}
+      <div className="absolute inset-0 bg-no-repeat bg-center bg-[length:150%_auto] md:bg-cover"
+        style={{ backgroundImage: 'url(/weare.svg)' }}></div>
 
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center mb-20">
           <div className="space-y-8 col-span-3">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
@@ -57,7 +59,7 @@ const TeamPage = () => {
 
 
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-16">
           {t.team.skills.title}
         </h2>
@@ -123,7 +125,7 @@ const TeamPage = () => {
 
 
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="w-full h-96 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl flex items-center justify-center">
             <div className="text-gray-500 text-lg">Image placeholder</div>
@@ -141,7 +143,7 @@ const TeamPage = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
 

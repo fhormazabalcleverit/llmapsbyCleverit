@@ -20,6 +20,13 @@
     "boxB": {
       "title": "Un equipo cohesionado que colabora bajo una misma cultura.",
       "description": "Nuestro grupo de especialistas en GitHub, Cloud, DevOps y experiencia digital trabaja codo a codo con los clientes para transformar sus desafíos en oportunidades de crecimiento."
+    },
+    "skills": {
+      "title": "Habilidades unidas por la tecnología",
+      "skill1": "Ingeniería de software",
+      "skill2": "Especialistas en GitHub",
+      "skill3": "Product Designer",
+      "skill4": "Equipos comerciales"
     }
   },
   "hero": {

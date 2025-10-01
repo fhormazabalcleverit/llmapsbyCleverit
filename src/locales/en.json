@@ -20,6 +20,13 @@
     "boxB": {
       "title": "A cohesive team that collaborates under the same culture",
       "description": "Our team of GitHub, Cloud, DevOps, and digital experience specialists work closely with clients to transform their challenges into growth opportunities."
+    },
+    "skills": {
+      "title": "Skills united by technology",
+      "skill1": "Software engineering",
+      "skill2": "GitHub specialists",
+      "skill3": "Product Designer",
+      "skill4": "Sales teams"
     }
   },
   "hero": {

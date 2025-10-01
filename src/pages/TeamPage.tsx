@@ -51,7 +51,7 @@ const TeamPage = () => {
 
 
         
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               {t.team.title}

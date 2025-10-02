@@ -36,6 +36,26 @@
       "title": "Want to talk with our team?",
       "description": "We are ready to listen to your needs and build the solution your business deserves.",
       "button": "Let's talk now"
+    },
+    "achievements": {
+      "title": "Achievements and differentiators",
+      "subtitle": "Why choose CleverIT as your technology partner?",
+      "achievement1": {
+        "title": "Advanced certifications and specializations",
+        "description": "Microsoft Partner, specialists in GitHub, Cloud and DevOps."
+      },
+      "achievement2": {
+        "title": "Proven success cases",
+        "description": "Implementation of scalable solutions in leading LATAM companies."
+      },
+      "achievement3": {
+        "title": "Own innovation",
+        "description": "Creation of products like Groowcity, Pulzen and Nxt, that solve real problems in talent management, engagement and productivity."
+      },
+      "achievement4": {
+        "title": "Proven methodology",
+        "description": "We combine design thinking, data-driven design and agile methodologies to ensure measurable results."
+      }
     }
   },
   "hero": {

@@ -180,10 +180,10 @@ const TeamPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
         <div ref={achievementsTitle.ref} className={`fade-in-up ${achievementsTitle.isVisible ? 'animate' : ''}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-            Logros y diferenciadores
+            {t.team.achievements.title}
           </h2>
           <p className="text-xl text-gray-300 text-center mb-16">
-            ¿Por qué elegir a CleverIT como partner tecnológico?
+            {t.team.achievements.subtitle}
           </p>
         </div>
 
@@ -194,10 +194,10 @@ const TeamPage = () => {
               className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up ${achievement1.isVisible ? 'animate' : ''}`}
             >
               <h3 className="text-xl font-bold text-white mb-4">
-                Certificaciones y especializaciones avanzadas
+                {t.team.achievements.achievement1.title}
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Partner de Microsoft, especialistas en GitHub, Cloud y DevOps.
+                {t.team.achievements.achievement1.description}
               </p>
             </div>
 
@@ -206,10 +206,10 @@ const TeamPage = () => {
               className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay ${achievement2.isVisible ? 'animate' : ''}`}
             >
               <h3 className="text-xl font-bold text-white mb-4">
-                Casos de éxito comprobados
+                {t.team.achievements.achievement2.title}
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Implementación de soluciones escalables en empresas líderes de LATAM.
+                {t.team.achievements.achievement2.description}
               </p>
             </div>
 
@@ -218,10 +218,10 @@ const TeamPage = () => {
               className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay-2 ${achievement3.isVisible ? 'animate' : ''}`}
             >
               <h3 className="text-xl font-bold text-white mb-4">
-                Innovación propia
+                {t.team.achievements.achievement3.title}
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Creación de productos como Groowcity, Pulzen y Nxt, que resuelven problemas reales en gestión de talento, engagement y productividad.
+                {t.team.achievements.achievement3.description}
               </p>
             </div>
           </div>
@@ -232,10 +232,10 @@ const TeamPage = () => {
               className={`bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 fade-in-up-delay-3 ${achievement4.isVisible ? 'animate' : ''}`}
             >
               <h3 className="text-xl font-bold text-white mb-4">
-                Metodología comprobada
+                {t.team.achievements.achievement4.title}
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Combinamos design thinking, data-driven design y metodologías ágiles para asegurar resultados medibles.
+                {t.team.achievements.achievement4.description}
               </p>
             </div>
           </div>

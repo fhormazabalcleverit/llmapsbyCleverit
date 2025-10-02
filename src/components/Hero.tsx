@@ -14,7 +14,7 @@ const Hero = () => {
         style={{ backgroundImage: 'url(/background01.svg)' }}></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-40 md:mt-0">
-        <div className="text-center max-w-4xl mx-auto mt-80">
+        <div className="text-center max-w-4xl mx-auto mt-40">
           {/* Rating Section */}
           <div className="flex items-center justify-center space-x-2 mb-8 animate-fade-in">
             <div className="flex items-center">

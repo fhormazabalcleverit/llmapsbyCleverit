@@ -19,10 +19,8 @@ const Footer = () => {
               Transformamos negocios con soluciones de IA personalizadas que impulsan la innovación y el crecimiento.
             </p>
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-lg w-fit">
-              <span className="text-gray-300 text-sm">
-                              <Mail className="w-4 h-4 text-gray-400" />
-
-                <a href="mailto:info@llmaps.com" target="_blank">info@llmaps.com</a></span>
+              <Mail className="w-4 h-4 text-gray-400" />
+              <span className="text-gray-300 text-sm">info@llmaps.com</span>
             </div>
           </div>
 

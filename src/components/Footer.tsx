@@ -27,13 +27,13 @@ const Footer = () => {
           <div>
             <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-6">LINK</h3>
             <div className="space-y-4">
-              <a href="" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">
+              <a href="/team" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 Conoce al equipo
               </a>
               <a href="/plans" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 Planes
               </a>
-              <a href="#" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">
+              <a href="/quote" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 Contáctanos
               </a>
             </div>

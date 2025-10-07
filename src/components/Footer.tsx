@@ -20,7 +20,8 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-lg w-fit">
               <Mail className="w-4 h-4 text-gray-400" />
-              <span className="text-gray-300 text-sm">info@llmaps.com</span>
+              <span className="text-gray-300 text-sm">
+                <a href="mailto:info@llmaps.com">info@llmaps.com</a></span>
             </div>
           </div>
 

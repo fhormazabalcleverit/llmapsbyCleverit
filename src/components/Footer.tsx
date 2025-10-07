@@ -47,6 +47,7 @@ const Footer = () => {
 
           {/* Language & Social Column */}
           <div>
+            {/*
             <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-6">{language === 'es' ? 'IDIOMA Y REDES' : 'LANGUAGE & SOCIAL'}</h3>
             <div className="mb-6">
               <button
@@ -57,6 +58,7 @@ const Footer = () => {
                 <span>{language === 'es' ? 'English' : 'Español'}</span>
               </button>
             </div>
+            */}
             <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-6 mt-8">SOCIAL</h3>
             <div className="space-y-4">
               <a href="#" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">

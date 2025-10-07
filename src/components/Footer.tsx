@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="flex items-center">
               <img src="/logotipo.svg" alt="LLMApp by CleverIT" className="h-8" />
             </div>
-            <p className="text-gray-300 leading-relaxed max-w-sm mb-4">
+            <p className="text-gray-300 leading-relaxed max-w-sm">
               Transformamos negocios con soluciones de IA personalizadas que impulsan la innovación y el crecimiento.
             </p>
             <a href="mailto:info@llmaps.com" target="_blank">

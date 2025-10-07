@@ -18,7 +18,7 @@ const Footer = () => {
             <p className="text-gray-300 leading-relaxed max-w-sm">
               Transformamos negocios con soluciones de IA personalizadas que impulsan la innovación y el crecimiento.
             </p>
-            <a href="mailto:info@llmaps.com" target="_blank" className="mt-24">
+            <a href="mailto:info@llmaps.com" target="_blank" className="pt-24">
               <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-lg w-fit">
                 <Mail className="w-4 h-4 text-gray-400" />
                 <span className="text-gray-300 text-sm">info@llmaps.com</span>

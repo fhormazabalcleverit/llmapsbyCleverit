@@ -1,8 +1,11 @@
 import React from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const Footer = () => {
+  const { language, toggleLanguage, t } = useLanguage();
+
   return (
     <footer className="bg-backblack py-16 relative overflow-hidden pt-40">
       {/* Background SVG */}
@@ -16,7 +19,7 @@ const Footer = () => {
               <img src="/logotipo.svg" alt="LLMApp by CleverIT" className="h-8" />
             </div>
             <p className="text-gray-300 leading-relaxed max-w-sm">
-              Transformamos negocios con soluciones de IA personalizadas que impulsan la innovación y el crecimiento.
+              {t.footer.description}
             </p>
             <a href="mailto:info@llmaps.com" target="_blank">
               <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-lg w-fit mt-6">
@@ -28,23 +31,33 @@ const Footer = () => {
 
           {/* Links Column */}
           <div>
-            <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-6">MAPA DE SITIO</h3>
+            <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-6">{language === 'es' ? 'MAPA DE SITIO' : 'SITEMAP'}</h3>
             <div className="space-y-4">
               <Link to="/team" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">
-                Conoce al equipo
+                {t.navbar.team}
               </Link>
               <Link to="/plans" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">
-                Planes
+                {t.navbar.plans}
               </Link>
               <Link to="/quote" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">
-                Contáctanos
+                {t.navbar.contact}
               </Link>
             </div>
           </div>
 
-          {/* Social Column */}
+          {/* Language & Social Column */}
           <div>
-            <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-6">SOCIAL</h3>
+            <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-6">{language === 'es' ? 'IDIOMA Y REDES' : 'LANGUAGE & SOCIAL'}</h3>
+            <div className="mb-6">
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center space-x-2 bg-gray-800 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 text-gray-300 hover:text-white px-4 py-2 rounded-lg transition-all duration-200 font-medium w-full justify-center"
+              >
+                <Globe className="w-4 h-4" />
+                <span>{language === 'es' ? 'English' : 'Español'}</span>
+              </button>
+            </div>
+            <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-6 mt-8">SOCIAL</h3>
             <div className="space-y-4">
               <a href="#" className="block text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 Facebook
@@ -63,7 +76,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
             <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-1 text-gray-400 text-sm order-2 md:order-1">
-              <span>Creado por</span>
+              <span>{language === 'es' ? 'Creado por' : 'Created by'}</span>
               <div className="flex items-center space-x-1">
                
                 <a href="https://www.cleveritgroup.com/es" target="_blank" className="text-gray-300 hover:text-pink-400 transition-colors duration-200 underline">
@@ -73,14 +86,14 @@ const Footer = () => {
                 </a>
                 <span>2025 LLMApps.</span>
               </div>
-              <span className="block sm:inline">Todos los derechos reservados.</span>
+              <span className="block sm:inline">{t.footer.rights}</span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-3 sm:space-y-0 sm:space-x-6 order-1 md:order-2">
               <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-200 text-sm underline">
-                Términos de Servicio
+                {t.footer.terms}
               </a>
               <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors duration-200 text-sm underline">
-                Política de Privacidad
+                {t.footer.privacy}
               </a>
             </div>
           </div>
